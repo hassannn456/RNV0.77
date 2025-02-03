@@ -1,0 +1,181 @@
+{
+  "customer": {
+    "sessionCustomer": {
+      "firstName": "Karina",
+      "lastName": "Brodsky",
+      "title": "",
+      "suffix": "",
+      "email": "subarugenone@gmail.com",
+      "address": "2232 Route 70 W",
+      "address2": "Unit U",
+      "city": "Cherry Hill",
+      "state": "NJ",
+      "zip": "08002",
+      "cellularPhone": "8565801876",
+      "workPhone": "2222222222",
+      "homePhone": "8565801877",
+      "countryCode": "USA",
+      "relationshipType": null,
+      "gender": "",
+      "dealerCode": null,
+      "oemCustId": "CRM-82IKV-3HVV",
+      "createMysAccount": null,
+      "sourceSystemCode": "mys",
+      "vehicles": [
+        {
+          "vin": "4S4BSAHC7H3325094",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": true,
+          "oemCustId": "CRM-82IKV-3HVV",
+          "status": "Active"
+        }
+      ],
+      "phone": "8565801876",
+      "zip5Digits": "08002",
+      "primaryPersonalCountry": "USA"
+    },
+    "email": "8565801876",
+    "firstName": "Karina",
+    "lastName": "Brodsky",
+    "zip": "08002",
+    "oemCustId": "CRM-82IKV-3HVV",
+    "phone": "8565801876"
+  },
+  "vehicleName": "2017 Outback 2.5i Premiummm",
+  "stolenVehicle": false,
+  "modelYear": "2017",
+  "modelCode": "HDD",
+  "engineSize": 2.5,
+  "vin": "4S4BSAHC7H3325094",
+  "nickname": "2017 Outback 2.5i Premiummm",
+  "vehicleKey": 183681,
+  "active": true,
+  "licensePlate": "U11FPB",
+  "licensePlateState": "NJ",
+  "email": "subarugenone@gmail.com",
+  "firstName": "Karina",
+  "lastName": "Brodsky",
+  "subscriptionFeatures": ["SAFETY", "REMOTE"],
+  "accessLevel": -1,
+  "zip": "08002",
+  "oemCustId": "CRM-82IKV-3HVV",
+  "vehicleMileage": 10000,
+  "phone": "8565801876",
+  "timeZone": "UTC",
+  "features": ["ACN", "BSD", "EYESIGHT", "g1"],
+  "phev": null,
+  "userOemCustId": "CRM-82IKV-3HVV",
+  "subscriptionStatus": "ACTIVE",
+  "authorizedVehicle": false,
+  "preferredDealer": {
+    "dealerKey": 163,
+    "sourceDealerKey": 54915,
+    "dealerCode": "020255",
+    "name": "Wayne Subaru",
+    "regionCode": "020",
+    "salesDistrictCode": "03",
+    "zoneCode": "01",
+    "phoneNumber": "9738354700",
+    "servicePhoneNumber": "9738354725",
+    "faxNumber": "9738351107",
+    "address": "600 Route 23 North",
+    "address2": null,
+    "city": "Pompton Plains",
+    "state": "NJ",
+    "zip": "07444",
+    "serviceAddress": "2204 Hamburg Tpke",
+    "serviceCity": "Wayne                 ",
+    "serviceState": "NJ",
+    "serviceZip": "07470",
+    "url": "waynesubaru.com",
+    "latDeg": 40.971216,
+    "longDeg": -74.286001,
+    "terminationDate": null,
+    "sourceUpdateDate": null,
+    "buySellDealerCode": null,
+    "createDate": 1508800029000,
+    "updateDate": 1661796295000,
+    "schedulable": true,
+    "distance": null,
+    "marketId": 1,
+    "serviceLatDeg": 40.983633,
+    "serviceLongDeg": -74.275375,
+    "partsPhoneNumber": "9738354700",
+    "serviceCountry": "US",
+    "phoneNumberOriginal": "9738354700",
+    "partsPhoneNumberOriginal": "9738354700",
+    "servicePhoneNumberOriginal": "9738354725",
+    "flags": [
+      {
+        "dealerFlagCode": "ACTIVE",
+        "dealerFlagSubCode": null
+      },
+      {
+        "dealerFlagCode": "FINANCE",
+        "dealerFlagSubCode": "CHASE"
+      },
+      {
+        "dealerFlagCode": "SCHEDULE",
+        "dealerFlagSubCode": "AUTOLOOP"
+      },
+      {
+        "dealerFlagCode": "SERVICE",
+        "dealerFlagSubCode": null
+      },
+      {
+        "dealerFlagCode": "SALES",
+        "dealerFlagSubCode": null
+      },
+      {
+        "dealerFlagCode": "CPO",
+        "dealerFlagSubCode": null
+      },
+      {
+        "dealerFlagCode": "MAINTENANCE",
+        "dealerFlagSubCode": "CARECONNECT"
+      },
+      {
+        "dealerFlagCode": "EV",
+        "dealerFlagSubCode": "REPAIRS"
+      },
+      {
+        "dealerFlagCode": "EV",
+        "dealerFlagSubCode": "REPAIRS_BATTERY"
+      },
+      {
+        "dealerFlagCode": "HYBRID",
+        "dealerFlagSubCode": "REPAIRS"
+      },
+      {
+        "dealerFlagCode": "EQUITY",
+        "dealerFlagSubCode": "TRADEUP"
+      },
+      {
+        "dealerFlagCode": "CERTIFICATION",
+        "dealerFlagSubCode": "LPCOMM"
+      }
+    ]
+  },
+  "cachedStateCode": "NJ",
+  "modelName": "Outback",
+  "subscriptionPlans": [
+    {
+      "expireDate": 1711756800000,
+      "expireDateLocal": null,
+      "description": "STARLINK Safety Plus & Security Plus",
+      "automaticRenewal": false,
+      "startDate": null
+    }
+  ],
+  "crmRightToRepair": false,
+  "needMileagePrompt": false,
+  "sunsetUpgraded": true,
+  "extDescrip": "Tungsten Metallic",
+  "intDescrip": "Ivory",
+  "transCode": "CVT",
+  "provisioned": true,
+  "remoteServicePinExist": true,
+  "needEmergencyContactPrompt": false,
+  "vehicleGeoPosition": null,
+  "show3gSunsetBanner": false
+}

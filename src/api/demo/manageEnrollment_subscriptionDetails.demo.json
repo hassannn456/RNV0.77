@@ -1,0 +1,214 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "subscriptionDetails",
+  "data": [
+    {
+      "masterPlanId": "starlinkSafetyRetail",
+      "starlinkPackage": "SAFETY",
+      "planDate": {
+        "year": 2022,
+        "month": "OCTOBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "dayOfMonth": 10,
+        "monthValue": 10,
+        "dayOfWeek": "MONDAY",
+        "dayOfYear": 283
+      },
+      "expirationDate": {
+        "year": 2023,
+        "month": "OCTOBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "dayOfMonth": 9,
+        "monthValue": 10,
+        "dayOfWeek": "MONDAY",
+        "dayOfYear": 282
+      },
+      "nextBillingDate": {
+        "year": 2023,
+        "month": "OCTOBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "dayOfMonth": 10,
+        "monthValue": 10,
+        "dayOfWeek": "TUESDAY",
+        "dayOfYear": 283
+      },
+      "months": 12,
+      "automaticRenewal": true,
+      "trial": false,
+      "dunning": false,
+      "customFields": [
+        {
+          "name": "enrollmentSource",
+          "value": "mobileapp"
+        }
+      ],
+      "rolloverPlanRateSchedule": {
+        "rateScheduleNumber": 10365975,
+        "rateScheduleId": "starlinkSafetyRetail12M",
+        "price": 99.95,
+        "months": 12,
+        "startDate": "2017-04-14",
+        "endDate": null,
+        "defaultRate": true,
+        "masterPlanId": "starlinkSafetyRetail",
+        "active": true,
+        "discontinued": false
+      },
+      "planAgeInDays": 276
+    },
+    {
+      "masterPlanId": "starlinkRemoteServicesRetail",
+      "starlinkPackage": "REMOTE",
+      "planDate": {
+        "year": 2022,
+        "month": "OCTOBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "dayOfMonth": 10,
+        "monthValue": 10,
+        "dayOfWeek": "MONDAY",
+        "dayOfYear": 283
+      },
+      "expirationDate": {
+        "year": 2023,
+        "month": "OCTOBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "dayOfMonth": 9,
+        "monthValue": 10,
+        "dayOfWeek": "MONDAY",
+        "dayOfYear": 282
+      },
+      "nextBillingDate": {
+        "year": 2023,
+        "month": "OCTOBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "dayOfMonth": 10,
+        "monthValue": 10,
+        "dayOfWeek": "TUESDAY",
+        "dayOfYear": 283
+      },
+      "months": 12,
+      "automaticRenewal": true,
+      "trial": false,
+      "dunning": false,
+      "customFields": [
+        {
+          "name": "enrollmentSource",
+          "value": "mobileapp"
+        }
+      ],
+      "rolloverPlanRateSchedule": {
+        "rateScheduleNumber": 10365979,
+        "rateScheduleId": "starlinkRemoteServicesRetail12M",
+        "price": 49.95,
+        "months": 12,
+        "startDate": "2017-04-14",
+        "endDate": null,
+        "defaultRate": true,
+        "masterPlanId": "starlinkRemoteServicesRetail",
+        "active": true,
+        "discontinued": false
+      },
+      "planAgeInDays": 276
+    },
+    {
+      "masterPlanId": "starlinkConciergeRetail",
+      "starlinkPackage": "CONCIERGE",
+      "planDate": {
+        "year": 2022,
+        "month": "OCTOBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "dayOfMonth": 10,
+        "monthValue": 10,
+        "dayOfWeek": "MONDAY",
+        "dayOfYear": 283
+      },
+      "expirationDate": {
+        "year": 2023,
+        "month": "OCTOBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "dayOfMonth": 9,
+        "monthValue": 10,
+        "dayOfWeek": "MONDAY",
+        "dayOfYear": 282
+      },
+      "nextBillingDate": {
+        "year": 2023,
+        "month": "OCTOBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "dayOfMonth": 10,
+        "monthValue": 10,
+        "dayOfWeek": "TUESDAY",
+        "dayOfYear": 283
+      },
+      "months": 12,
+      "automaticRenewal": true,
+      "trial": false,
+      "dunning": false,
+      "customFields": [
+        {
+          "name": "enrollmentSource",
+          "value": "mobileapp"
+        }
+      ],
+      "rolloverPlanRateSchedule": {
+        "rateScheduleNumber": 10365987,
+        "rateScheduleId": "starlinkConciergeRetail12M",
+        "price": 49.95,
+        "months": 12,
+        "startDate": "2017-04-14",
+        "endDate": null,
+        "defaultRate": true,
+        "masterPlanId": "starlinkConciergeRetail",
+        "active": true,
+        "discontinued": false
+      },
+      "planAgeInDays": 276
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "attWifiState",
+  "data": {
+    "vin": "MYSUBARU0FAKEDATA",
+    "iccid": "89011702272032912302",
+    "forwardAddress": "https://myvehicle.att.com/#/subaru/learn?VIN=MYSUBARU0FAKEDATA&firstName=Otha&lastName=Carney&street1=204+New+Jersey+Ave&street2=&city=Absecon&state=NJ&zip=08201&email=janie.rios%40gmail.com&country=US",
+    "errorCode": null,
+    "description": null,
+    "WiFiState": "N"
+  }
+}

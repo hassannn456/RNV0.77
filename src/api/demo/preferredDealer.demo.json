@@ -1,0 +1,320 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "vehicle",
+  "data": {
+    "customer": {
+      "sessionCustomer": {
+        "firstName": "Dallas",
+        "lastName": "Fry",
+        "title": "",
+        "suffix": "",
+        "email": "janie.rios@gmail.com",
+        "address": "1001 East Blvd",
+        "address2": "",
+        "city": "Phillipsburg",
+        "state": "NJ",
+        "zip": "08865-4418",
+        "cellularPhone": "8888093212",
+        "workPhone": "8888093212",
+        "homePhone": "8888093212",
+        "countryCode": "USA",
+        "relationshipType": null,
+        "gender": "",
+        "dealerCode": null,
+        "oemCustId": "CRM-919-XGV51W",
+        "createMysAccount": null,
+        "sourceSystemCode": "mys",
+        "vehicles": [
+          {
+            "vin": "MYSUBARU0FAKEDATA",
+            "siebelVehicleRelationship": "TM Subscriber",
+            "primary": true,
+            "oemCustId": "CRM-919-XGV51W",
+            "status": "Active"
+          }
+        ],
+        "phone": "8888093212",
+        "primaryPersonalCountry": "USA",
+        "zip5Digits": "08865"
+      },
+      "email": "8888093212",
+      "firstName": "Dallas",
+      "lastName": "Fry",
+      "zip": "08865-4418",
+      "oemCustId": "CRM-919-XGV51W",
+      "phone": "8888093212"
+    },
+    "features": [
+      "11.6MMAN",
+      "ABS_MIL",
+      "ACCS",
+      "AHBL_MIL",
+      "ATF_MIL",
+      "AWD_MIL",
+      "BSD",
+      "BSDRCT_MIL",
+      "CEL_MIL",
+      "CMD-4.2-HIGH-SW",
+      "DOOR_LU_STAT",
+      "DOOR_OC_STAT",
+      "DOORALL",
+      "DOORF",
+      "EBD_MIL",
+      "EOL_MIL",
+      "EPAS_MIL",
+      "EPB_MIL",
+      "ESS_MIL",
+      "EYESIGHT",
+      "HOODSTAT",
+      "ISS_MIL",
+      "MOONSTAT",
+      "OPL_MIL",
+      "PANMRF_ES",
+      "PANPM-DG2G",
+      "PANPM-FGTU",
+      "PANPM-INTRETR",
+      "PANPM-PWRSHD",
+      "PANPM-TUIRWAOC",
+      "RAB_MIL",
+      "RCC",
+      "RDP",
+      "REARBRK",
+      "RES",
+      "RESCC",
+      "RHSF",
+      "RPOI",
+      "RPOIA",
+      "RRSR",
+      "RTGU",
+      "RVFS",
+      "SRH_MIL",
+      "SRS_MIL",
+      "SXM360L",
+      "TAIL_LU_STAT",
+      "TAIL_OC_STAT",
+      "TEL_MIL",
+      "TLD",
+      "TPMS_MIL",
+      "VALET",
+      "VDC_MIL",
+      "WASH_MIL",
+      "WDWSTAT",
+      "g3"
+    ],
+    "vin": "MYSUBARU0FAKEDATA",
+    "modelYear": "2013",
+    "modelCode": "DAA",
+    "engineSize": 2.5,
+    "nickname": "My First Subaru",
+    "vehicleKey": 289711,
+    "active": true,
+    "licensePlate": "????????",
+    "licensePlateState": "NJ",
+    "email": "janie.rios@gmail.com",
+    "firstName": "Dallas",
+    "lastName": "Fry",
+    "accessLevel": -1,
+    "subscriptionFeatures": [
+      "SAFETY",
+      "Retail",
+      "REMOTE",
+      "CONCIERGE",
+      "REMOTE",
+      "CONCIERGE",
+      "SAFETY",
+      "Retail"
+    ],
+    "zip": "08865-4418",
+    "oemCustId": "CRM-919-XGV51W",
+    "vehicleMileage": 237,
+    "phone": "8888093212",
+    "vehicleName": "My First Subaru",
+    "stolenVehicle": false,
+    "timeZone": "America/New_York",
+    "needMileagePrompt": false,
+    "subscriptionPlans": [
+      {
+        "expireDate": null,
+        "expireDateLocal": {
+          "year": 2026,
+          "month": "APRIL",
+          "chronology": {
+            "calendarType": "iso8601",
+            "id": "ISO"
+          },
+          "era": "CE",
+          "leapYear": false,
+          "dayOfMonth": 10,
+          "monthValue": 4,
+          "dayOfWeek": "FRIDAY",
+          "dayOfYear": 100
+        },
+        "description": "STARLINK Security Plus",
+        "automaticRenewal": true,
+        "startDate": {
+          "year": 2023,
+          "month": "APRIL",
+          "chronology": {
+            "calendarType": "iso8601",
+            "id": "ISO"
+          },
+          "era": "CE",
+          "leapYear": false,
+          "dayOfMonth": 12,
+          "monthValue": 4,
+          "dayOfWeek": "WEDNESDAY",
+          "dayOfYear": 102
+        }
+      },
+      {
+        "expireDate": null,
+        "expireDateLocal": {
+          "year": 2026,
+          "month": "APRIL",
+          "chronology": {
+            "calendarType": "iso8601",
+            "id": "ISO"
+          },
+          "era": "CE",
+          "leapYear": false,
+          "dayOfMonth": 10,
+          "monthValue": 4,
+          "dayOfWeek": "FRIDAY",
+          "dayOfYear": 100
+        },
+        "description": "STARLINK Safety Plus",
+        "automaticRenewal": true,
+        "startDate": {
+          "year": 2023,
+          "month": "APRIL",
+          "chronology": {
+            "calendarType": "iso8601",
+            "id": "ISO"
+          },
+          "era": "CE",
+          "leapYear": false,
+          "dayOfMonth": 10,
+          "monthValue": 4,
+          "dayOfWeek": "MONDAY",
+          "dayOfYear": 100
+        }
+      }
+    ],
+    "crmRightToRepair": false,
+    "userOemCustId": "CRM-919-XGV51W",
+    "subscriptionStatus": "ACTIVE",
+    "authorizedVehicle": false,
+    "preferredDealer": {
+      "dealerKey": 55,
+      "sourceDealerKey": 55020,
+      "dealerCode": "030169",
+      "name": "Subaru of America",
+      "regionCode": "050",
+      "salesDistrictCode": "05",
+      "zoneCode": "01",
+      "phoneNumber": "5555555555",
+      "servicePhoneNumber": "5555555555",
+      "faxNumber": "5555555555",
+      "address": "123 Anywhere Ave",
+      "address2": null,
+      "city": "Anytown",
+      "state": "US",
+      "zip": "55555",
+      "serviceAddress": "123 Anywhere Ave",
+      "serviceCity": "Anytown",
+      "serviceState": "US",
+      "serviceZip": "55555",
+      "url": "glanzmann.com",
+      "latDeg": 40.09112,
+      "longDeg": -75.126396,
+      "terminationDate": null,
+      "sourceUpdateDate": null,
+      "buySellDealerCode": null,
+      "createDate": 1508800029000,
+      "updateDate": 1661796237000,
+      "schedulable": true,
+      "distance": null,
+      "marketId": 1,
+      "serviceLatDeg": 40.09112,
+      "serviceLongDeg": -75.126396,
+      "partsPhoneNumber": "5555555555",
+      "serviceCountry": "US",
+      "phoneNumberOriginal": "2158858282",
+      "partsPhoneNumberOriginal": "2158858282",
+      "servicePhoneNumberOriginal": "2158858282",
+      "flags": [
+        {
+          "dealerFlagCode": "ACTIVE",
+          "dealerFlagSubCode": null
+        },
+        {
+          "dealerFlagCode": "FINANCE",
+          "dealerFlagSubCode": "CHASE"
+        },
+        {
+          "dealerFlagCode": "SCHEDULE",
+          "dealerFlagSubCode": "XTIME"
+        },
+        {
+          "dealerFlagCode": "SERVICE",
+          "dealerFlagSubCode": null
+        },
+        {
+          "dealerFlagCode": "SALES",
+          "dealerFlagSubCode": null
+        },
+        {
+          "dealerFlagCode": "CERTIFICATION",
+          "dealerFlagSubCode": "ECO"
+        },
+        {
+          "dealerFlagCode": "CPO",
+          "dealerFlagSubCode": null
+        },
+        {
+          "dealerFlagCode": "EXPRESS",
+          "dealerFlagSubCode": null
+        },
+        {
+          "dealerFlagCode": "MAINTENANCE",
+          "dealerFlagSubCode": "CARECONNECT"
+        },
+        {
+          "dealerFlagCode": "EV",
+          "dealerFlagSubCode": "REPAIRS"
+        },
+        {
+          "dealerFlagCode": "HYBRID",
+          "dealerFlagSubCode": "REPAIRS"
+        },
+        {
+          "dealerFlagCode": "EQUITY",
+          "dealerFlagSubCode": "TRADEUP"
+        },
+        {
+          "dealerFlagCode": "CERTIFICATION",
+          "dealerFlagSubCode": "LPCOMM"
+        }
+      ]
+    },
+    "cachedStateCode": "NJ",
+    "phev": null,
+    "extDescrip": "Deep Indigo Pearl",
+    "intDescrip": "Ivory",
+    "modelName": "Legacy",
+    "transCode": "6MT",
+    "provisioned": true,
+    "remoteServicePinExist": true,
+    "needEmergencyContactPrompt": false,
+    "vehicleGeoPosition": {
+      "latitude": 40.386284,
+      "longitude": -74.544785,
+      "speed": null,
+      "heading": null,
+      "timestamp": "2023-04-12T13:41:27"
+    },
+    "show3gSunsetBanner": false,
+    "sunsetUpgraded": true
+  }
+}

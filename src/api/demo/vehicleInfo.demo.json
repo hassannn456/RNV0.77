@@ -1,0 +1,207 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": null,
+  "data": {
+    "tradeInValue": "16500",
+    "vehicle": {
+      "customer": {
+        "sessionCustomer": null,
+        "email": null,
+        "firstName": null,
+        "lastName": null,
+        "zip": null,
+        "oemCustId": null,
+        "phone": null
+      },
+      "vehicleName": "My First Subaru",
+      "stolenVehicle": false,
+      "features": [
+        "11.6MMAN",
+        "ABS_MIL",
+        "ACCS",
+        "AHBL_MIL",
+        "ATF_MIL",
+        "AWD_MIL",
+        "BSD",
+        "BSDRCT_MIL",
+        "CEL_MIL",
+        "EBD_MIL",
+        "EOL_MIL",
+        "EPAS_MIL",
+        "EPB_MIL",
+        "ESS_MIL",
+        "EYESIGHT",
+        "ISS_MIL",
+        "MOONSTAT",
+        "NAV_TOMTOM",
+        "OPL_MIL",
+        "RAB_MIL",
+        "RCC",
+        "REARBRK",
+        "RES",
+        "RESCC",
+        "RTGU",
+        "RHSF",
+        "RPOI",
+        "RPOIA",
+        "SRH_MIL",
+        "SRS_MIL",
+        "TEL_MIL",
+        "TLD",
+        "TPMS_MIL",
+        "VDC_MIL",
+        "WASH_MIL",
+        "WDWSTAT",
+        "g2"
+      ],
+      "vin": "MYSUBARU0FAKEDATA",
+      "modelYear": "2016",
+      "modelCode": "GRC",
+      "engineSize": 2.0,
+      "email": null,
+      "firstName": null,
+      "lastName": null,
+      "subscriptionFeatures": [
+        "SAFETY",
+        "Retail",
+        "REMOTE",
+        "CONCIERGE",
+        "REMOTE",
+        "CONCIERGE",
+        "SAFETY",
+        "Retail"
+      ],
+      "accessLevel": -1,
+      "nickname": "My First Subaru",
+      "vehicleKey": 335700,
+      "active": true,
+      "licensePlate": "",
+      "licensePlateState": "",
+      "zip": null,
+      "oemCustId": "CRM-99YUFJ68-E",
+      "vehicleMileage": 25052,
+      "phone": null,
+      "timeZone": "America/New_York",
+      "phev": null,
+      "userOemCustId": "CRM-99YUFJ68-E",
+      "subscriptionStatus": "ACTIVE",
+      "authorizedVehicle": false,
+      "preferredDealer": null,
+      "cachedStateCode": "NJ",
+      "subscriptionPlans": [
+        {
+          "expireDate": null,
+          "expireDateLocal": {
+            "year": 2033,
+            "month": "OCTOBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": false,
+            "dayOfMonth": 7,
+            "monthValue": 10,
+            "dayOfWeek": "FRIDAY",
+            "dayOfYear": 276
+          },
+          "description": "STARLINK Safety Plus",
+          "automaticRenewal": true,
+          "startDate": {
+            "year": 2022,
+            "month": "OCTOBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": false,
+            "dayOfMonth": 7,
+            "monthValue": 10,
+            "dayOfWeek": "MONDAY",
+            "dayOfYear": 276
+          }
+        },
+        {
+          "expireDate": null,
+          "expireDateLocal": {
+            "year": 2033,
+            "month": "OCTOBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": false,
+            "dayOfMonth": 7,
+            "monthValue": 10,
+            "dayOfWeek": "FRIDAY",
+            "dayOfYear": 276
+          },
+          "description": "STARLINK Concierge",
+          "automaticRenewal": true,
+          "startDate": {
+            "year": 2022,
+            "month": "OCTOBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": false,
+            "dayOfMonth": 7,
+            "monthValue": 10,
+            "dayOfWeek": "MONDAY",
+            "dayOfYear": 276
+          }
+        },
+        {
+          "expireDate": null,
+          "expireDateLocal": {
+            "year": 2033,
+            "month": "OCTOBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": false,
+            "dayOfMonth": 3,
+            "monthValue": 10,
+            "dayOfWeek": "FRIDAY",
+            "dayOfYear": 276
+          },
+          "description": "STARLINK Security Plus",
+          "automaticRenewal": true,
+          "startDate": {
+            "year": 2022,
+            "month": "OCTOBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": false,
+            "dayOfMonth": 3,
+            "monthValue": 10,
+            "dayOfWeek": "MONDAY",
+            "dayOfYear": 276
+          }
+        }
+      ],
+      "crmRightToRepair": false,
+      "needMileagePrompt": false,
+      "extDescrip": "Crystal Black Silica",
+      "intDescrip": "Ivory",
+      "modelName": "Crosstrek",
+      "transCode": "CVT",
+      "provisioned": true,
+      "remoteServicePinExist": true,
+      "needEmergencyContactPrompt": false,
+      "vehicleGeoPosition": null,
+      "show3gSunsetBanner": false,
+      "sunsetUpgraded": true
+    }
+  }
+}

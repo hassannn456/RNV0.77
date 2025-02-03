@@ -1,0 +1,69 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": null,
+  "data": [
+    {
+      "address": "95 Old York Rd",
+      "city": "Jenkintown",
+      "dealerCode": "030169",
+      "dealerKey": null,
+      "distance": "0.7",
+      "faxNumber": "2158861295",
+      "latDeg": "40.09112",
+      "longDeg": "-75.126396",
+      "name": "Glanzmann Subaru",
+      "phoneNumber": "8774360909",
+      "state": "PA",
+      "url": "glanzmann.com",
+      "zip": "19046",
+      "flags": [
+        "ACTIVE",
+        "FINANCE",
+        "SCHEDULE",
+        "SERVICE",
+        "SALES",
+        "CERTIFICATION",
+        "CPO",
+        "EXPRESS",
+        "MAINTENANCE",
+        "EV",
+        "HYBRID",
+        "EQUITY",
+        "CERTIFICATION"
+      ],
+      "website": "http://glanzmann.com"
+    },
+    {
+      "address": "1201 E. Ridge Pike",
+      "city": "Plymouth Meeting",
+      "dealerCode": "030180",
+      "dealerKey": null,
+      "distance": "11.08",
+      "faxNumber": "6103139565",
+      "latDeg": "40.108612",
+      "longDeg": "-75.32327",
+      "name": "John Kennedy Subaru",
+      "phoneNumber": "6102785000",
+      "state": "PA",
+      "url": "johnkennedysubaru.com",
+      "zip": "19462",
+      "flags": [
+        "ACTIVE",
+        "FINANCE",
+        "SCHEDULE",
+        "SERVICE",
+        "SALES",
+        "PARTSSTORE",
+        "CERTIFICATION",
+        "CPO",
+        "MAINTENANCE",
+        "EV",
+        "EV",
+        "EQUITY",
+        "CERTIFICATION"
+      ],
+      "website": "http://johnkennedysubaru.com"
+    }
+  ]
+}

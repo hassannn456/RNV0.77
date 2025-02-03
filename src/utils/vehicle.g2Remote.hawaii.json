@@ -1,0 +1,313 @@
+{
+  "customer": {
+    "sessionCustomer": {
+      "firstName": "Emil",
+      "lastName": "Ingram",
+      "title": "",
+      "suffix": "",
+      "email": "emil.ingramtest@gmail.com",
+      "address": "305 New Jersey Ave",
+      "address2": "",
+      "city": "Absecon",
+      "state": "HI",
+      "zip": "08201",
+      "cellularPhone": "8888093211",
+      "workPhone": "8888093211",
+      "homePhone": "8888093211",
+      "countryCode": "USA",
+      "relationshipType": null,
+      "gender": "",
+      "dealerCode": null,
+      "oemCustId": "CRM-72HEX-8LQD",
+      "createMysAccount": null,
+      "sourceSystemCode": "mys",
+      "vehicles": [
+        {
+          "vin": "4S4BRCLC7C3247505",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": true,
+          "oemCustId": "CRM-72HEX-8LQD",
+          "status": "Active"
+        }
+      ],
+      "phone": "8888093211",
+      "zip5Digits": "08201",
+      "primaryPersonalCountry": "USA"
+    },
+    "email": "8888093211",
+    "firstName": "Emil",
+    "lastName": "Ingram",
+    "zip": "08201",
+    "oemCustId": "CRM-72HEX-8LQD",
+    "phone": "8888093211"
+  },
+  "vin": "4S4BRCLC7C3247505",
+  "modelYear": "2012",
+  "modelCode": "CDF",
+  "engineSize": 2.5,
+  "nickname": "Emil",
+  "vehicleKey": 325720,
+  "active": true,
+  "licensePlate": "",
+  "licensePlateState": "",
+  "email": "emil.ingramtest@gmail.com",
+  "firstName": "Emil",
+  "lastName": "Ingram",
+  "accessLevel": -1,
+  "subscriptionFeatures": ["SAFETY", "Retail", "CONCIERGE", "REMOTE"],
+  "zip": "08201",
+  "oemCustId": "CRM-72HEX-8LQD",
+  "vehicleMileage": 74,
+  "phone": "8888093211",
+  "timeZone": "America/Phoenix",
+  "vehicleName": "Emil",
+  "stolenVehicle": false,
+  "features": [
+    "11.6MMAN",
+    "ABS_MIL",
+    "ACCS",
+    "AHBL_MIL",
+    "ATF_MIL",
+    "AWD_MIL",
+    "BSD",
+    "BSDRCT_MIL",
+    "CEL_MIL",
+    "EBD_MIL",
+    "EOL_MIL",
+    "EPAS_MIL",
+    "EPB_MIL",
+    "ESS_MIL",
+    "EYESIGHT",
+    "ISS_MIL",
+    "NAV_TOMTOM",
+    "OPL_MIL",
+    "RAB_MIL",
+    "RCC",
+    "REARBRK",
+    "RES",
+    "RESCC",
+    "RHSF",
+    "RPOI",
+    "RPOIA",
+    "SRH_MIL",
+    "SRS_MIL",
+    "TEL_MIL",
+    "TPMS_MIL",
+    "VDC_MIL",
+    "WASH_MIL",
+    "g2"
+  ],
+  "userOemCustId": "CRM-72HEX-8LQD",
+  "subscriptionStatus": "ACTIVE",
+  "authorizedVehicle": false,
+  "preferredDealer": {
+    "dealerKey": 169,
+    "sourceDealerKey": 55044,
+    "dealerCode": "030207",
+    "name": "Rafferty Subaru",
+    "regionCode": "050",
+    "salesDistrictCode": "05",
+    "zoneCode": "01",
+    "phoneNumber": "6103536900",
+    "servicePhoneNumber": "6103536900",
+    "faxNumber": "6103533029",
+    "address": "4700 West Chester Pike",
+    "address2": null,
+    "city": "Newtown Square",
+    "state": "PA",
+    "zip": "19073",
+    "serviceAddress": "4700 West Chester Pike",
+    "serviceCity": "Newtown Square        ",
+    "serviceState": "PA",
+    "serviceZip": "19073",
+    "url": "raffertysubaru.com",
+    "latDeg": 39.976391,
+    "longDeg": -75.435746,
+    "terminationDate": null,
+    "sourceUpdateDate": null,
+    "buySellDealerCode": null,
+    "createDate": 1508800029000,
+    "updateDate": 1661796252000,
+    "schedulable": true,
+    "distance": null,
+    "marketId": 1,
+    "serviceLatDeg": 39.976391,
+    "serviceLongDeg": -75.435746,
+    "partsPhoneNumber": "6103536900",
+    "serviceCountry": "US",
+    "phoneNumberOriginal": "6103536900",
+    "partsPhoneNumberOriginal": "6103536900",
+    "servicePhoneNumberOriginal": "6103536900",
+    "flags": [
+      {
+        "dealerFlagCode": "ACTIVE",
+        "dealerFlagSubCode": null
+      },
+      {
+        "dealerFlagCode": "FINANCE",
+        "dealerFlagSubCode": "CHASE"
+      },
+      {
+        "dealerFlagCode": "SCHEDULE",
+        "dealerFlagSubCode": "AUTOLOOP"
+      },
+      {
+        "dealerFlagCode": "SERVICE",
+        "dealerFlagSubCode": null
+      },
+      {
+        "dealerFlagCode": "SALES",
+        "dealerFlagSubCode": null
+      },
+      {
+        "dealerFlagCode": "PARTSSTORE",
+        "dealerFlagSubCode": "SIMPLEPARTS"
+      },
+      {
+        "dealerFlagCode": "CPO",
+        "dealerFlagSubCode": null
+      },
+      {
+        "dealerFlagCode": "EXPRESS",
+        "dealerFlagSubCode": null
+      },
+      {
+        "dealerFlagCode": "MAINTENANCE",
+        "dealerFlagSubCode": "CARECONNECT"
+      },
+      {
+        "dealerFlagCode": "EV",
+        "dealerFlagSubCode": "REPAIRS"
+      },
+      {
+        "dealerFlagCode": "EQUITY",
+        "dealerFlagSubCode": "TRADEUP"
+      },
+      {
+        "dealerFlagCode": "CERTIFICATION",
+        "dealerFlagSubCode": "LPCOMM"
+      }
+    ]
+  },
+  "cachedStateCode": "HI",
+  "modelName": "Outback",
+  "subscriptionPlans": [
+    {
+      "expireDate": null,
+      "expireDateLocal": {
+        "year": 2026,
+        "month": "DECEMBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "monthValue": 12,
+        "dayOfMonth": 13,
+        "dayOfWeek": "SUNDAY",
+        "dayOfYear": 347
+      },
+      "description": "STARLINK Safety Plus",
+      "automaticRenewal": true,
+      "startDate": {
+        "year": 2022,
+        "month": "DECEMBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "monthValue": 12,
+        "dayOfMonth": 13,
+        "dayOfWeek": "TUESDAY",
+        "dayOfYear": 347
+      }
+    },
+    {
+      "expireDate": null,
+      "expireDateLocal": {
+        "year": 2026,
+        "month": "DECEMBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "monthValue": 12,
+        "dayOfMonth": 13,
+        "dayOfWeek": "SUNDAY",
+        "dayOfYear": 347
+      },
+      "description": "STARLINK Concierge",
+      "automaticRenewal": true,
+      "startDate": {
+        "year": 2022,
+        "month": "DECEMBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "monthValue": 12,
+        "dayOfMonth": 13,
+        "dayOfWeek": "TUESDAY",
+        "dayOfYear": 347
+      }
+    },
+    {
+      "expireDate": null,
+      "expireDateLocal": {
+        "year": 2026,
+        "month": "DECEMBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "monthValue": 12,
+        "dayOfMonth": 13,
+        "dayOfWeek": "SUNDAY",
+        "dayOfYear": 347
+      },
+      "description": "STARLINK Security Plus",
+      "automaticRenewal": true,
+      "startDate": {
+        "year": 2022,
+        "month": "DECEMBER",
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        },
+        "era": "CE",
+        "leapYear": false,
+        "monthValue": 12,
+        "dayOfMonth": 13,
+        "dayOfWeek": "TUESDAY",
+        "dayOfYear": 347
+      }
+    }
+  ],
+  "crmRightToRepair": false,
+  "needMileagePrompt": false,
+  "phev": null,
+  "sunsetUpgraded": true,
+  "extDescrip": "Ice Silver Metallic",
+  "intDescrip": "Black",
+  "transCode": "CVT",
+  "provisioned": true,
+  "remoteServicePinExist": true,
+  "needEmergencyContactPrompt": false,
+  "vehicleGeoPosition": {
+    "latitude": 48.28363,
+    "longitude": 11.562153,
+    "speed": null,
+    "heading": null,
+    "timestamp": "2024-02-27T14:49:41"
+  },
+  "show3gSunsetBanner": false
+}

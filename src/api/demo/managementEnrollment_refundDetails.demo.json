@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "refundDetails",
+  "data": {
+    "refundTransactionId": 2598701758,
+    "refundAmount": 102.43,
+    "createDate": "2023-04-10",
+    "paymentMethodId": 1,
+    "paymentMethod": "Credit Card",
+    "ccType": "Visa",
+    "ccSuffix": "4448",
+    "invoiceReversals": [
+      {
+        "invoiceNo": 205940114,
+        "invoiceBillDate": "2022-10-03",
+        "invoiceAmount": 48.05,
+        "clientServiceId": "starlinkSafety"
+      },
+      {
+        "invoiceNo": 205940114,
+        "invoiceBillDate": "2022-10-03",
+        "invoiceAmount": 24.01,
+        "clientServiceId": "starlinkRemoteServices"
+      },
+      {
+        "invoiceNo": 205940114,
+        "invoiceBillDate": "2022-10-03",
+        "invoiceAmount": 24.01,
+        "clientServiceId": "starlinkConcierge"
+      }
+    ],
+    "taxAmount": 6.359999999999999
+  }
+}

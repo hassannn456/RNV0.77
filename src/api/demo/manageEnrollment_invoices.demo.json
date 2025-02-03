@@ -1,0 +1,145 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "invoicesList",
+  "data": [
+    {
+      "invoiceType": "INVOICE",
+      "amount": "$106.38",
+      "number": 231798650,
+      "parsedInvoiceDate": "Wed, Apr 12 2023"
+    },
+    {
+      "invoiceType": "INVOICE",
+      "amount": "$0.00",
+      "number": 231462328,
+      "parsedInvoiceDate": "Mon, Apr 10 2023"
+    },
+    {
+      "invoiceType": "ELECTRONIC_REFUND",
+      "amount": "$102.43",
+      "number": 2598701758,
+      "parsedInvoiceDate": "Mon, Apr 10 2023"
+    },
+    {
+      "invoiceType": "INVOICE",
+      "amount": "$213.09",
+      "number": 205940114,
+      "parsedInvoiceDate": "Mon, Oct 03 2022"
+    },
+    {
+      "invoiceType": "ELECTRONIC_REFUND",
+      "amount": "$198.46",
+      "number": 2517327795,
+      "parsedInvoiceDate": "Mon, Oct 03 2022"
+    },
+    {
+      "invoiceType": "INVOICE",
+      "amount": "$213.09",
+      "number": 203182619,
+      "parsedInvoiceDate": "Thu, Sep 08 2022"
+    },
+    {
+      "invoiceType": "ELECTRONIC_REFUND",
+      "amount": "$213.09",
+      "number": 2511201674,
+      "parsedInvoiceDate": "Thu, Sep 08 2022"
+    },
+    {
+      "invoiceType": "INVOICE",
+      "amount": "$213.09",
+      "number": 203182306,
+      "parsedInvoiceDate": "Thu, Sep 08 2022"
+    },
+    {
+      "invoiceType": "ELECTRONIC_REFUND",
+      "amount": "$213.09",
+      "number": 2511201351,
+      "parsedInvoiceDate": "Thu, Sep 08 2022"
+    },
+    {
+      "invoiceType": "ELECTRONIC_REFUND",
+      "amount": "$213.09",
+      "number": 2511201342,
+      "parsedInvoiceDate": "Thu, Sep 08 2022"
+    },
+    {
+      "invoiceType": "INVOICE",
+      "amount": "$213.09",
+      "number": 203182193,
+      "parsedInvoiceDate": "Thu, Sep 08 2022"
+    },
+    {
+      "invoiceType": "INVOICE",
+      "amount": "$213.09",
+      "number": 203182187,
+      "parsedInvoiceDate": "Thu, Sep 08 2022"
+    },
+    {
+      "invoiceType": "ELECTRONIC_REFUND",
+      "amount": "$207.81",
+      "number": 2511201174,
+      "parsedInvoiceDate": "Thu, Sep 08 2022"
+    },
+    {
+      "invoiceType": "INVOICE",
+      "amount": "$213.09",
+      "number": 202367278,
+      "parsedInvoiceDate": "Tue, Aug 30 2022"
+    },
+    {
+      "invoiceType": "ELECTRONIC_REFUND",
+      "amount": "$209.00",
+      "number": 2509508765,
+      "parsedInvoiceDate": "Tue, Aug 30 2022"
+    },
+    {
+      "invoiceType": "INVOICE",
+      "amount": "$213.09",
+      "number": 201241778,
+      "parsedInvoiceDate": "Tue, Aug 23 2022"
+    },
+    {
+      "invoiceType": "ELECTRONIC_REFUND",
+      "amount": "$151.05",
+      "number": 2506974505,
+      "parsedInvoiceDate": "Tue, Aug 23 2022"
+    },
+    {
+      "invoiceType": "ELECTRONIC_REFUND",
+      "amount": "$50.34",
+      "number": 2506974415,
+      "parsedInvoiceDate": "Tue, Aug 23 2022"
+    },
+    {
+      "invoiceType": "INVOICE",
+      "amount": "$213.09",
+      "number": 198914969,
+      "parsedInvoiceDate": "Wed, Aug 03 2022"
+    },
+    {
+      "invoiceType": "ELECTRONIC_REFUND",
+      "amount": "$5.28",
+      "number": 2502346550,
+      "parsedInvoiceDate": "Wed, Aug 03 2022"
+    },
+    {
+      "invoiceType": "INVOICE",
+      "amount": "$5.28",
+      "number": 198871760,
+      "parsedInvoiceDate": "Wed, Aug 03 2022"
+    },
+    {
+      "invoiceType": "ELECTRONIC_REFUND",
+      "amount": "$5.28",
+      "number": 2502284546,
+      "parsedInvoiceDate": "Wed, Aug 03 2022"
+    },
+    {
+      "invoiceType": "INVOICE",
+      "amount": "$5.28",
+      "number": 198696379,
+      "parsedInvoiceDate": "Tue, Aug 02 2022"
+    }
+  ]
+}

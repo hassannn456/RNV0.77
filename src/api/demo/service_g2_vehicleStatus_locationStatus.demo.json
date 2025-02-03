@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "remoteServiceStatus",
+  "data": {
+    "serviceRequestId": null,
+    "success": true,
+    "cancelled": false,
+    "remoteServiceType": "locate",
+    "remoteServiceState": "finished",
+    "subState": null,
+    "errorCode": null,
+    "result": {
+      "latitude": 40.276,
+      "longitude": -76.895294,
+      "speed": null,
+      "heading": null,
+      "locationTimestamp": 1694119353000
+    },
+    "updateTime": null,
+    "vin": "MYSUBARU0FAKEDATA",
+    "errorDescription": null
+  }
+}

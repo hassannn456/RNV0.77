@@ -1,0 +1,45 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "dataMap",
+  "data": {
+    "billingContact": {
+      "contactNumber": 42210180,
+      "address": {
+        "first_name": "Otha",
+        "middle_initial": null,
+        "last_name": "Carney",
+        "company_name": null,
+        "address1": "305 New Jersey Ave",
+        "address2": null,
+        "city": "Absecon 2",
+        "state_prov": "NJ",
+        "country": null,
+        "postal_cd": "08201",
+        "country_cd": null
+      },
+      "phone": null,
+      "email": null
+    },
+    "paymentMethod": {
+      "paymentMethodIndexNumber": 13,
+      "name": null,
+      "paymentType": 1,
+      "last4": "4448",
+      "expireMonth": 5,
+      "expireYear": 2026,
+      "cardType": null,
+      "cardTypeName": "Visa",
+      "active": true,
+      "number": null,
+      "cvv": null,
+      "billFirstName": "Otha",
+      "billLastName": "Carney",
+      "billAddress1": "305 New Jersey Ave",
+      "billCity": "Absecon 2",
+      "billStateProv": "NJ",
+      "billPostalCd": "08201",
+      "billingContactNumber": 42210180
+    }
+  }
+}

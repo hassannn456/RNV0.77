@@ -1,0 +1,6 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": null,
+  "data": "[{\"name\":\"Demo Curfew\",\"active\":false,\"timeZoneId\":\"America/New_York\",\"curfews\":[{\"startHour\":\"10\",\"startMinute\":\"00\",\"endHour\":\"14\",\"endMinute\":\"00\",\"days\":[1,2,3,4,5]}]}]"
+}

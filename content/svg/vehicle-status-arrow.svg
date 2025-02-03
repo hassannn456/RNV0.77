@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="health-bar__arrow" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0"
+    width="4.7" height="8" viewBox="0 0 4.7 8" xml:space="preserve"><g transform="translate(168.337 -93.352)"><path class="fill-warning" d="M-167.7 101.4c-0.2 0-0.3-0.1-0.5-0.2 -0.3-0.3-0.3-0.7 0-0.9l2.9-2.9 -2.9-2.9c-0.3-0.3-0.3-0.7 0-0.9 0.3-0.3 0.7-0.3 0.9 0 0 0 0 0 0 0l3.3 3.3c0.1 0.1 0.2 0.3 0.2 0.5 0 0.2-0.1 0.3-0.2 0.5l-3.3 3.3C-167.3 101.3-167.5 101.4-167.7 101.4z"/></g></svg>

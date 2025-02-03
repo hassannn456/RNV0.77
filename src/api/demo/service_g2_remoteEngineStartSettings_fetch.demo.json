@@ -1,0 +1,6 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": null,
+  "data": "[{\"name\":\"my preset\",\"runTimeMinutes\":\"10\",\"climateZoneFrontTemp\":\"72\",\"climateZoneFrontAirMode\":\"WINDOW\",\"climateZoneFrontAirVolume\":\"4\",\"outerAirCirculation\":\"outsideAir\",\"heatedRearWindowActive\":\"false\",\"heatedSeatFrontLeft\":\"OFF\",\"heatedSeatFrontRight\":\"OFF\",\"airConditionOn\":\"false\",\"canEdit\":\"true\",\"disabled\":\"false\",\"presetType\":\"userPreset\",\"startConfiguration\":\"START_ENGINE_ALLOW_KEY_IN_IGNITION\"}]"
+}

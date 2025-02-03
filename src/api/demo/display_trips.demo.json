@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "errorCode": null,
+  "data": [
+    {
+      "tripStartDate": "2024-05-16T14:10:52.000-0400",
+      "tripStopDate": "2024-05-16T14:18:41.000-0400",
+      "tripStartDateTz": "2024-05-16T14:10:52.000-0400",
+      "tripStopDateTz": "2024-05-16T14:18:41.000-0400",
+      "triplogCount": 2,
+      "vin": "MYSUBARU0FAKEDATA"
+    }
+  ],
+  "notes": {}
+}

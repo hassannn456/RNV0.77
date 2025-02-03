@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "remoteServiceStatus",
+  "data": {
+    "serviceRequestId": "MYSUBARU0FAKEDATA_1673448564957_20_@NGTP",
+    "success": true,
+    "cancelled": false,
+    "remoteServiceType": "unlock",
+    "remoteServiceState": "finished",
+    "subState": null,
+    "errorCode": null,
+    "result": null,
+    "updateTime": null,
+    "vin": "MYSUBARU0FAKEDATA",
+    "errorDescription": null
+  }
+}

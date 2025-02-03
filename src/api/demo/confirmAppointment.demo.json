@@ -1,0 +1,122 @@
+{
+  "dataName": null,
+  "errorCode": null,
+  "success": true,
+  "data": {
+    "address1": "305 New Jersey Ave",
+    "address2": "",
+    "appointmentDateTimeLocal": "2024-05-22T14:30-04:00",
+    "appointmentDateTimeLocalDisplayFormat": "May 22, at 2:30 PM",
+    "appointmentDateTimeUTC": "2024-05-22T18:30",
+    "city": "Absecon",
+    "country": "USA",
+    "dealerCode": null,
+    "dealerInfo": {
+      "dealerKey": 218,
+      "sourceDealerKey": 62181,
+      "dealerCode": "030180",
+      "name": "John Kennedy Subaru",
+      "regionCode": "050",
+      "salesDistrictCode": "05",
+      "zoneCode": "01",
+      "phoneNumber": "6102785000",
+      "servicePhoneNumber": "6102785000",
+      "faxNumber": "6103139565",
+      "address": "1201 E. Ridge Pike",
+      "address2": null,
+      "city": "Plymouth Meeting",
+      "state": "PA",
+      "zip": "19462",
+      "serviceAddress": "1201 E. Ridge Pike",
+      "serviceCity": "Plymouth Meeting",
+      "serviceState": "PA",
+      "serviceZip": "19462",
+      "url": "johnkennedysubaru.com",
+      "latDeg": 40.108612,
+      "longDeg": -75.32327,
+      "terminationDate": null,
+      "sourceUpdateDate": null,
+      "buySellDealerCode": null,
+      "createDate": 1508800029000,
+      "updateDate": 1661796284000,
+      "schedulable": true,
+      "distance": null,
+      "marketId": 1,
+      "serviceLatDeg": 40.108612,
+      "serviceLongDeg": -75.32327,
+      "partsPhoneNumber": "6102785000",
+      "serviceCountry": "US",
+      "phoneNumberOriginal": "6102785000",
+      "partsPhoneNumberOriginal": "6102785000",
+      "servicePhoneNumberOriginal": "6102785000",
+      "flags": [
+        {
+          "dealerFlagCode": "ACTIVE",
+          "dealerFlagSubCode": null
+        },
+        {
+          "dealerFlagCode": "FINANCE",
+          "dealerFlagSubCode": "CHASE"
+        },
+        {
+          "dealerFlagCode": "SCHEDULE",
+          "dealerFlagSubCode": "AUTOLOOP"
+        },
+        {
+          "dealerFlagCode": "SERVICE",
+          "dealerFlagSubCode": null
+        },
+        {
+          "dealerFlagCode": "SALES",
+          "dealerFlagSubCode": null
+        },
+        {
+          "dealerFlagCode": "PARTSSTORE",
+          "dealerFlagSubCode": "SIMPLEPARTS"
+        },
+        {
+          "dealerFlagCode": "CERTIFICATION",
+          "dealerFlagSubCode": "ECO"
+        },
+        {
+          "dealerFlagCode": "CPO",
+          "dealerFlagSubCode": null
+        },
+        {
+          "dealerFlagCode": "MAINTENANCE",
+          "dealerFlagSubCode": "CARECONNECT"
+        },
+        {
+          "dealerFlagCode": "EV",
+          "dealerFlagSubCode": "REPAIRS"
+        },
+        {
+          "dealerFlagCode": "EV",
+          "dealerFlagSubCode": "REPAIRS_BATTERY"
+        },
+        {
+          "dealerFlagCode": "EQUITY",
+          "dealerFlagSubCode": "TRADEUP"
+        },
+        {
+          "dealerFlagCode": "CERTIFICATION",
+          "dealerFlagSubCode": "LPCOMM"
+        }
+      ]
+    },
+    "dmsAppointmentId": null,
+    "emailAddress": "janie.rios@gmail.com",
+    "firstName": "Janie",
+    "lastName": "Rios",
+    "loopAppointmentId": "97faf61d-f35b-4a11-8c16-a57eeda42a2f",
+    "marketId": 1,
+    "notificationId": null,
+    "phoneNumber": "6102785000",
+    "services": [],
+    "sourceType": "2 ",
+    "state": "NJ",
+    "transportType": 1,
+    "vin": "MYSUBARU0FAKEDATA",
+    "zip": "08201-2411"
+  }
+}

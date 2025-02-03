@@ -1,0 +1,6 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": null,
+  "data": "[{\"name\":\"Arrive Home\",\"exceedMinimumSeconds\":\"120\",\"fenceType\":\"1\",\"active\":false,\"center\":{\"latitude\":40.2937059004214,\"longitude\":-76.89970584266584},\"radius\":1405.1201907210732,\"shapeType\":1,\"topLeft\":{\"latitude\":40.28308647354001,\"longitude\":-76.90461048821618},\"bottomRight\":{\"latitude\":40.26862952645999,\"longitude\":-76.88566151178381}},{\"name\":\"TEST\",\"exceedMinimumSeconds\":\"30\",\"fenceType\":\"1\",\"active\":true,\"center\":{\"latitude\":40.27583,\"longitude\":-76.895208},\"radius\":8037.695467617722,\"shapeType\":0,\"topLeft\":null,\"bottomRight\":null}]"
+}

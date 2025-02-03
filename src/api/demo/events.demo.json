@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "eventInfoList",
+  "data": [
+    {
+      "eventId": "DMAR-2021916122915",
+      "title": "2024 Impreza Launch",
+      "description": "test",
+      "eventStartDate": {
+        "year": 2024,
+        "month": "DECEMBER",
+        "monthValue": 12,
+        "dayOfMonth": 16,
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0,
+        "dayOfWeek": "MONDAY",
+        "dayOfYear": 351,
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        }
+      },
+      "eventEndDate": {
+        "year": 2024,
+        "month": "DECEMBER",
+        "monthValue": 12,
+        "dayOfMonth": 16,
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0,
+        "dayOfWeek": "MONDAY",
+        "dayOfYear": 351,
+        "chronology": {
+          "calendarType": "iso8601",
+          "id": "ISO"
+        }
+      },
+      "address1": "1 Subaru Drive",
+      "address2": "",
+      "city": "Camden",
+      "state": "NJ",
+      "zip": "08103",
+      "interest": "Safety",
+      "type": "Motorsports",
+      "url": "http://subaru.com",
+      "imageSrc": "http://serv.qa.subaru.com/serv/render/filemgmt/undefined",
+      "distanceMiles": 38.089766218084236,
+      "interestMatch": false,
+      "relevanceRank": 2
+    }
+  ]
+}

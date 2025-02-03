@@ -1,118 +1,83 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import type {PropsWithChildren} from 'react';
+import { Provider } from 'react-redux';
+import { store } from './src/store';
+import MgaNavigationContainer from './src/Controller';
+import './src/i18n';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
+  AppState,
+  AppStateStatus,
+  Linking,
+  NativeEventEmitter,
+  NativeModules,
 } from 'react-native';
-
+import Shortcuts from 'react-native-actions-shortcuts';
+import { mgaHandleDeepLink } from './src/components/utils/linking';
 import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+  MgaShortcutItem,
+  mgaHandleShortcut,
+} from './src/components/utils/shortcuts';
+import { useNotifications } from './src/features/notices/push';
+import { trackDeepLink, trackError } from './src/components/useTracking';
+import { forgetWatchInfo, navigateForWatch } from './src/features/watch/watch';
+import { biometricsState } from './src/features/biometrics/biometrics.slice';
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
-
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+/** Entry point for application */
+export const App = (): React.JSX.Element => {
+  useNotifications();
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
+    <Provider store={store}>
+      <SafeAreaProvider>
+        <MgaNavigationContainer />
+      </SafeAreaProvider>
+    </Provider>
   );
-}
+};
+let appState: AppStateStatus = AppState.currentState;
+const { MgaEventEmitter } = NativeModules;
 
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+/** Put code / services to run at app startup here. */
+const appStartup = async () => {
+  // Handle app being opened by a mysubaru:// URLs
+  const initialUrl = await Linking.getInitialURL();
+  if (initialUrl) {
+    trackDeepLink(initialUrl);
+    mgaHandleDeepLink(initialUrl);
+  }
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
+  // Listen for mysubaru:// URLs after app launch
+  Linking.addEventListener('url', ({ url }) => {
+    trackDeepLink(url);
+    mgaHandleDeepLink(url);
+  });
 
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-}
+  // Handle app being opened by a shortcut
+  const initialShortcut = await Shortcuts.getInitialShortcut();
+  mgaHandleShortcut(initialShortcut as MgaShortcutItem);
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+  // Listen for app shortcuts
+  const ShortcutsEmitter = new NativeEventEmitter(Shortcuts);
+  ShortcutsEmitter.addListener('onShortcutItemPressed', mgaHandleShortcut);
 
-export default App;
+  // Listen for watch messages
+  const eventEmitter = new NativeEventEmitter(MgaEventEmitter);
+  eventEmitter.addListener('onPairRequest', () => {
+    // CVCON25-3620: If the watch is asking for a pair, forget any paired device you have
+    forgetWatchInfo()
+      .then(() => {
+        navigateForWatch('AppleWatch');
+      })
+      .catch(trackError('onPairRequest/forgetWatchInfo'));
+  });
+  eventEmitter.addListener('onPinRequest', () => {
+    navigateForWatch('AppleWatchForgotPIN');
+  });
+
+  AppState.addEventListener('change', newState => {
+    if (appState === 'background' && newState === 'active') {
+      biometricsState();
+    }
+    appState = newState;
+  });
+};
+appStartup().then().catch(trackError('App.tsx'));

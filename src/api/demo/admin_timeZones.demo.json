@@ -1,0 +1,70 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "timeZones",
+  "data": [
+    {
+      "referenceKey": 287,
+      "type": "TIMEZONE_US",
+      "name": "Alaska (AKDT/AKST)",
+      "value": "America/Anchorage",
+      "displayOrder": 7,
+      "createdDate": 1568045437000,
+      "modifiedDate": 1568063379000
+    },
+    {
+      "referenceKey": 293,
+      "type": "TIMEZONE_US",
+      "name": "Arizona (MST/MDT)",
+      "value": "America/Phoenix",
+      "displayOrder": 3,
+      "createdDate": 1568045438000,
+      "modifiedDate": 1568045438000
+    },
+    {
+      "referenceKey": 295,
+      "type": "TIMEZONE_US",
+      "name": "Central (CST/CDT)",
+      "value": "America/Chicago",
+      "displayOrder": 2,
+      "createdDate": 1568045438000,
+      "modifiedDate": 1568045438000
+    },
+    {
+      "referenceKey": 297,
+      "type": "TIMEZONE_US",
+      "name": "Eastern (EST/EDT)",
+      "value": "America/New_York",
+      "displayOrder": 1,
+      "createdDate": 1568045438000,
+      "modifiedDate": 1568045438000
+    },
+    {
+      "referenceKey": 285,
+      "type": "TIMEZONE_US",
+      "name": "Hawaii (HST)",
+      "value": "Pacific/Honolulu",
+      "displayOrder": 6,
+      "createdDate": 1568045437000,
+      "modifiedDate": 1568045437000
+    },
+    {
+      "referenceKey": 291,
+      "type": "TIMEZONE_US",
+      "name": "Mountain (MST/MDT)",
+      "value": "America/Denver",
+      "displayOrder": 4,
+      "createdDate": 1568045438000,
+      "modifiedDate": 1568045438000
+    },
+    {
+      "referenceKey": 289,
+      "type": "TIMEZONE_US",
+      "name": "Pacific (PST/PDT)",
+      "value": "America/Los_Angeles",
+      "displayOrder": 5,
+      "createdDate": 1568045437000,
+      "modifiedDate": 1568045437000
+    }
+  ]
+}

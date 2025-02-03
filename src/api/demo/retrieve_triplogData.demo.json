@@ -1,0 +1,32 @@
+{
+  "success": true,
+  "errorCode": null,
+  "data": {
+    "resultMap": {
+      "05/16/24": [
+        {
+          "tripLogDataId": 969059,
+          "startTime": "2024-05-16T12:41:50.000-0400",
+          "endTime": "2024-05-16T12:44:52.000-0400",
+          "startTimeAMPM": null,
+          "endTimeAMPM": null,
+          "startOdometerUnit": "ONETENTHOF-MILE",
+          "startOdometerValue": 4280,
+          "endOdometerUnit": "ONETENTHOF-MILE",
+          "endOdometerValue": 4310,
+          "positionCount": 37,
+          "vin": "JF2DAYSL9U5000027",
+          "startLatitude": 39.937262,
+          "startLongitude": -75.024647,
+          "endLatitude": 39.943523,
+          "endLongitude": -75.107871,
+          "onlyDateStart": "05/16/24",
+          "onlyDateEnd": "05/16/24",
+          "onlyTimeStart": "12:41pm",
+          "onlyTimeEnd": "12:44pm"
+        }
+      ]
+    }
+  },
+  "notes": {}
+}

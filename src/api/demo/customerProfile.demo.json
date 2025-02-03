@@ -1,0 +1,55 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "customerProfileData",
+  "data": {
+    "nameTitles": [
+      "Dr",
+      "M",
+      "M. et Mme",
+      "Miss",
+      "Mlle",
+      "Mme",
+      "Mr",
+      "Mr. & Mrs",
+      "Mrs",
+      "Ms",
+      "N/A"
+    ],
+    "phoneCommunicationPreferred": true,
+    "customerProfile": {
+      "firstName": "Dallas",
+      "lastName": "Fry",
+      "title": "",
+      "suffix": "",
+      "email": "janie1.rios@gmail.com",
+      "address": "1001 East Blvd 4",
+      "address2": "",
+      "city": "Phillipsburg",
+      "state": "NJ",
+      "zip": "08865",
+      "cellularPhone": "8888093212",
+      "workPhone": "8888093212",
+      "homePhone": "8888093219",
+      "countryCode": "USA",
+      "relationshipType": null,
+      "gender": "",
+      "dealerCode": null,
+      "oemCustId": "CRM-919-XGV51W",
+      "createMysAccount": null,
+      "sourceSystemCode": "mys",
+      "vehicles": [
+        {
+          "vin": "4S3BMAA64D1006910",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": true,
+          "oemCustId": "CRM-919-XGV51W",
+          "status": "Active"
+        }
+      ],
+      "phone": "8888093212",
+      "zip5Digits": "08865",
+      "primaryPersonalCountry": "USA"
+    }
+  }
+}

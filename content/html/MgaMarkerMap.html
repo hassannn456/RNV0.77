@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html class='use-all-space'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel='stylesheet' type='text/css'
+        href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps.css' />
+    <style>
+        @font-face {
+            font-family: 'app-icons';
+            src: url(app-icons.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'app-icons';
+            src: url(file:///android_asset/fonts/app-icons.ttf) format('truetype');
+        }
+        body {
+            margin: 0;
+        }
+        #map {
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+        }
+        #layerSwitch { 
+            position: absolute; 
+            top: 0px; 
+            right: 0px;
+            padding: 0px 12px; 
+            z-index: 2; 
+            background-color: rgba(0,0,0,.8);
+            color: #fff;
+            display: block;
+            font-family: sans-serif ;
+            border-bottom-left-radius: 8px;
+            font-size:14px;
+        }
+
+
+        #layerSwitch label { 
+           height: 44px; line-height: 40px;
+           margin-right:8px
+        }
+
+        #layerSwitch label:last-of-type{ 
+           margin-right: 0;
+        }
+        .marker-circle {
+            width: 44px;
+            height: 44px;
+            border-radius: 22px;
+        }
+        .marker-symbol {
+            color: #fff;
+            font-family: 'app-icons';
+            font-size: 30px;
+            margin: 0 auto;
+            text-align: center;
+            height: 44px;
+            line-height: 44px;
+        }
+        .marker-geofence {
+            width: 22px;
+            height: 22px;
+            border-radius: 11px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='map' class='map'></div>
+    <div id='layerSwitch'>
+        <input id="streetLayerId" type="radio" name="layer" value="street" checked onchange="setSatellite(false)">
+        <label for="streetLayerId">Street</label>
+        <input id="satelliteLayerId" type="radio" name="layer" value="satellite" onchange="setSatellite(true)"> 
+        <label for="satelliteLayerId">Satellite</label>
+    </div>
+    <script src='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps-web.min.js'></script>
+    <script src='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/services/services-web.min.js'></script>
+    <script>
+        let mclBlue = "#1971D4"
+        // Original: http://www.movable-type.co.uk/scripts/latlong.html
+        // Matches Cordova app
+        function distanceInMeters(lng1, lat1, lng2, lat2) {
+            const R = 6371e3; // Radius of the Earth in meters
+            // Convert latitude and longitude to radians
+            const rLat1 = lat1 * Math.PI / 180;
+            const rLng1 = lng1 * Math.PI / 180;
+            const rLat2 = lat2 * Math.PI / 180;
+            const rLng2 = lng2 * Math.PI / 180;
+            // Compute the differences between the coordinates
+            const dLat = rLat2 - rLat1;
+            const dLng = rLng2 - rLng1;
+            // Haversine formula
+            const a =
+                Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                Math.cos(rLat1) * Math.cos(rLat2) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            const distance = R * c;
+            return distance;
+        }
+        let locals = { zoom: 16, showMapboxSatellite: false };
+        function getDefaultCaption() {
+            if (!locals.showMapboxSatellite) {
+                return `© 1992 - ${new Date().getFullYear()} TomTom`
+            } else {
+                return "Imagery © <b>Mapbox</b>"
+            }
+        }
+        let map;
+        let colorScheme;
+        function getMap() {
+            if (!map) {
+                tt.setProductInfo('MySubaru App', 'v0.1');
+                map = tt.map({
+                    key: locals.key,
+                    container: 'map',
+                    zoom: locals.zoom,
+                    dragPan: true,
+                    attributionControlPosition: 'bottom-right'
+                });
+                map.on('load', function () {
+                    listenWindowMatchMedia();
+                    map.addControl(new tt.NavigationControl(), 'top-left');
+                    map.getAttributionControl().tomtomCopyrightsCaption = getDefaultCaption();
+                    send({
+                        type: 'map/ready',
+                        payload: {}
+                    })
+
+                });
+            }
+            return map;
+        }
+        function withMap(mapFunction) {
+            if (map) {
+                mapFunction(map);
+            } else {
+                tt.setProductInfo('MySubaru App', 'v0.1');
+                map = tt.map({
+                    key: locals.key,
+                    container: 'map',
+                    zoom: locals.zoom,
+                    dragPan: true,
+                    attributionControlPosition: 'bottom-left'
+                });
+                map.on('load', function () {
+                    listenWindowMatchMedia();
+                    map.addControl(new tt.NavigationControl());
+                    map.getAttributionControl().tomtomCopyrightsCaption = getDefaultCaption();
+                    mapFunction(map);
+                    send({
+                        type: 'map/ready',
+                        payload: {}
+                    })
+
+                });
+            }
+        }
+        // If webview supports media matching, read light / dark status, then listen for changes
+        function listenWindowMatchMedia() {
+            if (window.matchMedia) {
+                const colorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                setColorScheme(colorScheme);
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+                    const newColorScheme = event.matches ? "dark" : "light";
+                    setColorScheme(newColorScheme);
+                });
+            } else {
+                setColorScheme('default');
+            }
+        }
+        let fenceFillColor;
+        let fenceFillOpacity;
+        let fenceOutlineColor;
+        /** Apply discovered color scheme (light / dark) to map */
+        function setColorScheme(value) {
+            colorScheme = value;
+            if (!map) { return; }
+            if (!colorScheme) { return; }
+            const isDark = colorScheme === 'dark';
+            map.setStyle(isDark
+                ? 'https://api.tomtom.com/style/1/style/21.1.0-*?map=basic_night&poi=poi_main'
+                : 'https://api.tomtom.com/style/1/style/21.1.0-*?map=basic_main&poi=poi_main');
+            map.on('styledata', function () {
+                map.setPaintProperty('POI', 'text-halo-color', isDark ? '#000000' : '#ffffff');
+                map.setPaintProperty('POI', 'text-color', isDark ? '#ffffff' : '#000000');
+            });
+            fenceFillColor = "#6b6b47";
+            fenceFillOpacity = 0.80;
+            fenceOutlineColor = "#0099ff";
+        }
+        function setMapCenter(lngLat) {
+            const map = getMap();
+            const oldLngLat = map.getCenter();
+            if (oldLngLat.lng === 0) {
+                map.setCenter(lngLat);
+            } else {
+                map.flyTo({ center: lngLat, zoom: locals.zoom });
+            }
+        }
+        const dataSourceId = 'dataSourceId';
+        const geoFenceLayerId = 'geoFenceLayerId';
+        const lineLayerId = 'lineLayerId';
+        let geojson = {
+            "type": "FeatureCollection",
+            "features": [{
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": ''
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": ''
+                }
+            }]
+        };
+        function addSourceAndLayers() {
+            const map = getMap();
+            map.addSource(dataSourceId, {
+                type: 'geojson',
+                data: geojson,
+            });
+            map.addLayer({
+                "id": geoFenceLayerId,
+                "type": "fill",
+                "source": dataSourceId,
+                "layout": {},
+                "paint": {
+                    "fill-color": fenceFillColor,
+                    "fill-opacity": fenceFillOpacity,
+                    "fill-outline-color": fenceOutlineColor
+                },
+                "filter": ["==", "$type", "Polygon"]
+            });
+            map.addLayer({
+                "id": lineLayerId,
+                "type": "line",
+                "source": dataSourceId,
+                "layout": {},
+                "paint": {
+                    "line-color": fenceOutlineColor,
+                    "line-width": 4
+                },
+                "filter": ["==", "$type", "LineString"],
+            });
+        }
+        function addLayersToMap() {
+            const map = getMap();
+            try {
+                if (map.getLayer(geoFenceLayerId)) {
+                    map.removeLayer(geoFenceLayerId);
+                }
+                if (map.getLayer(lineLayerId)) {
+                    map.removeLayer(lineLayerId);
+                }
+                if (map.getSource(dataSourceId)) {
+                    map.removeSource(dataSourceId);
+                }
+                addSourceAndLayers();
+            } catch (e) {
+                map.once('idle', function () {
+                    addSourceAndLayers();
+                });
+            }
+        }
+        function setSatellite(show) {
+            const sourceId = "mapboxSatelliteSourceId";
+            const layerId = "mapboxSatelliteLayerId";
+            withMap(map => {
+                if (show) {
+                    addLayersToMap();
+                    const mapboxAccessToken = 'pk.eyJ1Ijoic3ViYXJ1bW9iaWxlIiwiYSI6ImNpa2hid3VuZjAxZXd1ZG02cWdjY3hxcTIifQ.HyarI8eGLDdb8myFgg9D_g';
+                    const mapboxTileUrl = `https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v12/tiles/{z}/{x}/{y}@2x?access_token=${mapboxAccessToken}`;
+                    if (map.getLayer(layerId)) {
+                        map.removeLayer(layerId);
+                    }
+                    if (map.getSource(sourceId)) {
+                        map.removeSource(sourceId);
+                    }
+                    map.addSource(sourceId, {
+                        "type": "raster", "tileSize": 512, "minzoom": 0, "maxzoom": 22,
+                        "tiles": [mapboxTileUrl]
+                    });
+                    map.addLayer({
+                        "id": layerId,
+                        "type": "raster",
+                        "source": sourceId
+                    }, geoFenceLayerId);
+                } else {
+                    map.removeSource(sourceId);
+                    map.removeLayer(layerId);
+                }
+            });
+        }
+        function setZoom(zoom) {
+            withMap(map => {
+                map.setZoom(zoom)
+            })
+        }
+        let geofenceCenterMarker;
+        let geofenceRadiusMarker;
+        /** Apply geofence to map */
+        function setGeofence(geofence, animate) {
+            withMap(map => {
+                const center = new tt.LngLat(geofence.center.longitude, geofence.center.latitude);
+                const bounds = center.toBounds(geofence.radius);
+                const east = new tt.LngLat(bounds.getEast(), geofence.center.latitude);
+                // Draw a circle as an N-sided polygon
+                // Similar to Cordova app but letting
+                // TomTom use its map projection to compute radius
+                const points = 64;
+                const circle = Array.from({ length: points + 1 }, (_, i) => {
+                    const rLng = Math.abs(bounds.getEast() - geofence.center.longitude);
+                    const rLat = Math.abs(bounds.getSouth() - geofence.center.latitude);
+                    const theta = Math.PI * (i - 1) / (points / 2);
+                    return [
+                        geofence.center.longitude + (rLng * Math.cos(theta)),
+                        geofence.center.latitude + (rLat * Math.sin(theta))
+                    ];
+                });
+                const square = [
+                    [bounds.getEast(), bounds.getNorth()],
+                    [bounds.getEast(), bounds.getSouth()],
+                    [bounds.getWest(), bounds.getSouth()],
+                    [bounds.getWest(), bounds.getNorth()],
+                    [bounds.getEast(), bounds.getNorth()],
+                ];
+                const WORLD_BOX = [[-180.0, -85.0], [180.0, -85.0], [180.0, 85.0], [-180.0, 85.0], [-180.0, -85.0]];
+                if (!geofenceCenterMarker) {
+                    let markerElement = document.createElement('div');
+                    markerElement.className = "marker-geofence";
+                    markerElement.style.backgroundColor = mclBlue;
+                    geofenceCenterMarker = new tt.Marker({
+                        anchor: 'center',
+                        draggable: true,
+                        element: markerElement
+                    });
+                    geofenceCenterMarker.setLngLat(center);
+                    geofenceCenterMarker.addTo(map);
+                    geofenceCenterMarker.on('dragstart', function (e) {
+                        // Hide fence during center move
+                        if (map.getLayer(lineLayerId)) {
+                            map.removeLayer(lineLayerId);
+                        }
+                        if (map.getLayer(geoFenceLayerId)) {
+                            map.removeLayer(geoFenceLayerId);
+                        }
+                    });
+                    geofenceCenterMarker.on('dragend', function (e) {
+                        const newCenter = { latitude: e.target._lngLat.lat, longitude: e.target._lngLat.lng };
+                        const newGeofence = { ...locals.geofence, center: newCenter }
+                        set({ geofence: newGeofence });
+                    });
+                }
+                if (!geofenceRadiusMarker) {
+                    let markerElement = document.createElement('div');
+                    markerElement.className = "marker-geofence";
+                    markerElement.style.backgroundColor = mclBlue;
+                    geofenceRadiusMarker = new tt.Marker({
+                        anchor: 'center',
+                        draggable: true,
+                        element: markerElement
+                    });
+                    geofenceRadiusMarker.setLngLat(east);
+                    geofenceRadiusMarker.addTo(map);
+                    geofenceRadiusMarker.on('dragstart', function (e) {
+                        // Hide fence during resize
+                        if (map.getLayer(geoFenceLayerId)) {
+                            map.removeLayer(geoFenceLayerId);
+                        }
+                    });
+                    geofenceRadiusMarker.on('drag', function (e) {
+                        // Make line follow dot during move
+                        // Display radius while dragging
+                        const geofence = locals.geofence;
+                        const conversion = locals.distanceUnits?.meters ?? 1;
+                        const radius = distanceInMeters(geofence.center.longitude, geofence.center.latitude, e.target._lngLat.lng, e.target._lngLat.lat);
+                        const value = (radius / conversion).toFixed(1);
+                        const text = locals.distanceUnits?.label ?? "{{value}} m";
+                        geojson.features[1].geometry.coordinates = [[geofence.center.longitude, geofence.center.latitude], [e.target._lngLat.lng, e.target._lngLat.lat]];
+                        map.getSource(dataSourceId).setData(geojson);
+                        map.getAttributionControl().tomtomCopyrightsCaption = text.replace("{{value}}", value);
+                    });
+                    geofenceRadiusMarker.on('dragend', function (e) {
+                        // Report updated radius
+                        // Restore caption text
+                        const geofence = locals.geofence;
+                        const newRadius = distanceInMeters(
+                            geofence.center.longitude, geofence.center.latitude,
+                            e.target._lngLat.lng, e.target._lngLat.lat
+                        );
+                        const newGeofence = { ...locals.geofence, radius: newRadius }
+                        set({ geofence: newGeofence });
+                        map.getAttributionControl().tomtomCopyrightsCaption = getDefaultCaption();
+                    });
+                }
+                geofenceCenterMarker.setLngLat(center);
+                geofenceRadiusMarker.setLngLat(east);
+                const shape = geofence.shapeType == '1' ? square : circle;
+                geojson.features[0].geometry.coordinates = geofence.fenceType == '1' ? [WORLD_BOX, shape] : [shape];
+                geojson.features[1].geometry.coordinates = [[geofence.center.longitude, geofence.center.latitude], [bounds.getEast(), geofence.center.latitude]];
+                fitMapBounds([center, [bounds.getEast(), bounds.getNorth()], [bounds.getWest(), bounds.getSouth()]], animate);
+                addLayersToMap();
+                if (geofence.shapeType == 1) {
+                    const nw = bounds.getNorthWest();
+                    const se = bounds.getSouthEast();
+                    send({
+                        type: 'geofence/update', payload: {
+                            ...geofence,
+                            topLeft: { latitude: nw.lat, longitude: nw.lng },
+                            bottomRight: { latitude: se.lat, longitude: se.lng }
+                        }
+                    });
+                } else {
+                    send({
+                        type: 'geofence/update', payload: {
+                            ...geofence,
+                            topLeft: null,
+                            bottomRight: null
+                        }
+                    });
+                }
+            });
+        }
+
+        let markerData = [];
+        let markerElements = [];
+        /** Update location from vehicle telemetry */
+        function setMarkers(newMarkerData) {
+            const map = getMap();
+            // Insert new markers
+            while (markerElements.length < newMarkerData.length) {
+                let markerCircle = document.createElement('div');
+                markerCircle.className = "marker-circle";
+                markerCircle.style.backgroundColor = mclBlue;
+                let markerSymbol = document.createElement('div');
+                markerSymbol.className = "marker-symbol";
+                const index = markerElements.length; // Close over index
+                markerSymbol.addEventListener('click', function (_e) {
+                    send({type: 'marker/pressed', payload: { index }});
+                });
+                markerCircle.appendChild(markerSymbol);
+                let newMarker = new tt.Marker({ element: markerCircle, anchor: 'bottom' });
+                newMarker.setLngLat([0, 0]);
+                newMarker.addTo(map);
+                markerElements.push(newMarker);
+            }
+            // Remove excess markers
+            let excessMarker;
+            while (markerElements.length > newMarkerData.length) {
+                excessMarker = markerElements.pop();
+                excessMarker.remove();
+            }
+            // Update data
+            let markersNew = markerData.length == 0;
+            let markersUpdated = false;
+            for (let i = markerData.length; i < newMarkerData.length; i++) {
+                let lngLat = [newMarkerData[i].longitude, newMarkerData[i].latitude];
+                if (i >= markerData.length || markerData[i] !== newMarkerData[i]) {
+                    markersUpdated = true
+                    let markerCircle = markerElements[i].getElement();
+                    markerCircle.style.backgroundColor = newMarkerData[i].symbolBackgroundColor ?? mclBlue;
+                    let markerSymbol = markerCircle.firstChild;
+                    markerElements[i].setLngLat(lngLat);
+                    if (!!newMarkerData[i].symbolText && newMarkerData[i].symbolText.length > 0) {
+                        markerSymbol.innerText = newMarkerData[i].symbolText;
+                        if (newMarkerData[i].symbolTextFontSize) {
+                            markerSymbol.style.fontSize = `${newMarkerData[i].symbolTextFontSize}px`
+                        }
+                    }
+                }
+            }
+            markerData = newMarkerData;
+            // If markers changed, re-compute bounding box
+            if (markersUpdated) {
+                fitMapBounds(newMarkerData, !markersNew)
+            }
+        }
+
+        function setRoute(route) {
+            // MGA-1227 && MGA-2037
+            // This code used to ask TomTom to smooth the route
+            // which can fail (MGA-2037) or return bad data (MGA-1227)
+            const points = route.map(coord => ([
+                parseFloat(coord.longitude),
+                parseFloat(coord.latitude)
+            ]))
+            geojson.features[1].geometry.coordinates = points;
+            addLayersToMap();
+        }
+
+        function fitMapBounds(markers, animate) {
+            let bounds = new tt.LngLatBounds();
+            for (let i = 0; i < markers.length; i++) {
+                // Convert to LngLatLike structure if {longitude, latitude}
+                let lngLat = markers[i].longitude ? [markers[i].longitude, markers[i].latitude] : markers[i];
+                bounds.extend(lngLat);
+            }
+            // Horizontal padding around all markers (44px, width of 1 marker)
+            // Vertical padding is offset for pin placement (1.5 markers top, 0.5 markers bottom)
+            const padding = { top: 66, left: 44, bottom: 22, right: 44 }
+            map.fitBounds(bounds, {
+                animate: animate,
+                padding: padding
+            });
+        }
+
+        function set(values) {
+            try {
+                locals = { ...locals, ...values };
+                if (values.markers) {
+                    setMarkers(locals.markers);
+                }
+                if (values.center) {
+                    setMapCenter([locals.center.longitude, locals.center.latitude]);
+                }
+                if (values.geofence) {
+                    setGeofence(locals.geofence, false);
+                }
+                if (values.route) {
+                    setRoute(locals.route); 
+                }
+                if (values.geofence && values.route) {
+                    log("Geofence and route share layers and are not intended to be used at the same time. Behavior is undefined", "warn")
+                }
+                if (values.showLayerSwitch != undefined) {
+                    const toggle = document.getElementById('layerSwitch');
+                    toggle.style.display = values.showLayerSwitch ? 'block' : 'none';
+                }
+                if (values.zoom) {
+                    setZoom(locals.zoom);
+                }
+            } catch (error) {
+                let message = "Message Error";
+                message += `\nLocals :: ${JSON.stringify(locals)}`;
+                message += `\nValues :: ${JSON.stringify(values)}`;
+                message += `\nError :: ${error}`;
+                log(message, 'error');
+            }
+        }
+
+        function send(update) {
+            window.ReactNativeWebView && window.ReactNativeWebView.postMessage(JSON.stringify(update));
+        }
+
+        function log(message, level) {
+            send({
+                type: 'webView/log',
+                payload: {
+                    level: level ? level : 'log',
+                    message: message
+                }
+            })
+        }
+
+        send({ type: 'webView/ready', payload: true })
+    </script>
+</body>
+
+</html>

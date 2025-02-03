@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "appointmentResponse",
+  "data": [
+    {
+      "loopAppointmentId": 2277,
+      "appointmentDateTimeLocal": 1508800029000,
+      "dealerInfo": {
+        "dealerKey": 218,
+        "sourceDealerKey": 62181,
+        "dealerCode": "030180",
+        "name": "John Kennedy Subaru",
+        "regionCode": "050",
+        "salesDistrictCode": "05",
+        "zoneCode": "01",
+        "phoneNumber": "6102785000",
+        "servicePhoneNumber": "6102785000",
+        "faxNumber": "6103139565",
+        "address": "1201 E. Ridge Pike",
+        "address2": null,
+        "city": "Plymouth Meeting",
+        "state": "PA",
+        "zip": "19462",
+        "serviceAddress": "1201 E. Ridge Pike",
+        "serviceCity": "Plymouth Meeting",
+        "serviceState": "PA",
+        "serviceZip": "19462",
+        "url": "johnkennedysubaru.com",
+        "latDeg": 40.108612,
+        "longDeg": -75.32327,
+        "terminationDate": null,
+        "sourceUpdateDate": null,
+        "buySellDealerCode": null,
+        "createDate": 1508800029000,
+        "updateDate": 1661796284000,
+        "schedulable": true,
+        "distance": null,
+        "marketId": 1,
+        "serviceLatDeg": 40.108612,
+        "serviceLongDeg": -75.32327,
+        "partsPhoneNumber": "6102785000",
+        "serviceCountry": "US",
+        "phoneNumberOriginal": "6102785000",
+        "partsPhoneNumberOriginal": "6102785000",
+        "servicePhoneNumberOriginal": "6102785000"
+      }
+    }
+  ]
+}

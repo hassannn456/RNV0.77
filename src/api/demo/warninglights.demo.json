@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "warningLights",
+  "data": {
+    "success": false,
+    "code": 2,
+    "message": "No Warning Lights provided",
+    "dealersWarningLights": null
+  }
+}

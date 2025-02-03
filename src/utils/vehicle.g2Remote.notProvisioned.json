@@ -1,0 +1,326 @@
+{
+  "customer": {
+    "sessionCustomer": {
+      "firstName": "Karina",
+      "lastName": "Brodsky",
+      "title": "",
+      "suffix": "",
+      "email": "tq9-0077@subaru.com",
+      "address": "1 Subaru Dr Test12",
+      "address2": "Addr2112",
+      "city": "Camde",
+      "state": "MA",
+      "zip": "12323",
+      "cellularPhone": "9505921576",
+      "workPhone": "98566325899",
+      "homePhone": "45585258528",
+      "countryCode": "USA",
+      "relationshipType": null,
+      "gender": "",
+      "dealerCode": null,
+      "oemCustId": "CRM-02BYZY12-Z",
+      "createMysAccount": null,
+      "sourceSystemCode": "mys",
+      "vehicles": [
+        {
+          "vin": "4S3GTDNCXNK300107",
+          "siebelVehicleRelationship": "Previous TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-492-KFN79U",
+          "status": "Inactive"
+        },
+        {
+          "vin": "4S4WMAMD8K3400077",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": true,
+          "oemCustId": "CRM-02BYZY12-Z",
+          "status": "Active"
+        },
+        {
+          "vin": "4S4BTAPC4L3998139",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-45KKJN98-E",
+          "status": "Active"
+        },
+        {
+          "vin": "4S3BWAN67L3995082",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-533-QMM22Y",
+          "status": "Draft"
+        },
+        {
+          "vin": "JF2ESYSK5FR000062",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-10JFO-1EHZ",
+          "status": "Active"
+        },
+        {
+          "vin": "HZW0000000WL51532",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-29RCRJ84-A",
+          "status": "Active"
+        },
+        {
+          "vin": "4S3BNAT65K3000478",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-07RPJM25-D",
+          "status": "Inactive"
+        },
+        {
+          "vin": "4S4BSACC4K3000708",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-45TNLU17-P",
+          "status": "Draft"
+        },
+        {
+          "vin": "HZW0000000WL51534",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-22GOVI38-Z",
+          "status": "Inactive"
+        },
+        {
+          "vin": "HZW0000000WL51533",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-23KUK-9INL",
+          "status": "Inactive"
+        },
+        {
+          "vin": "HZW0000000WL51535",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-55HWGE88-R",
+          "status": "Inactive"
+        },
+        {
+          "vin": "4S4WMARD6K3400085",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-25AYTB71-R",
+          "status": "Active"
+        },
+        {
+          "vin": "4S3BWGL60L3995088",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-16LHZM85-B",
+          "status": "Active"
+        },
+        {
+          "vin": "4S3GTDEC6NK300105",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-0-JLFU8NFK",
+          "status": "Active"
+        },
+        {
+          "vin": "4S4WMARD6K3400071",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-99ZNZ-6RIS",
+          "status": "Draft"
+        },
+        {
+          "vin": "4S3GKAM65K3600009",
+          "siebelVehicleRelationship": "Previous TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-944-YBU86S",
+          "status": "Active"
+        },
+        {
+          "vin": "HZW0000000WL51536",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-18WQLF51-M",
+          "status": "Inactive"
+        },
+        {
+          "vin": "4S3BWGL61L3995083",
+          "siebelVehicleRelationship": "TM Subscriber",
+          "primary": false,
+          "oemCustId": "CRM-19QJN-4REN",
+          "status": "Draft"
+        }
+      ],
+      "phone": "9505921576",
+      "primaryPersonalCountry": "USA",
+      "zip5Digits": "12323"
+    },
+    "email": "9505921576",
+    "firstName": "Karina",
+    "lastName": "Brodsky",
+    "oemCustId": "CRM-02BYZY12-Z",
+    "zip": "12323",
+    "phone": "9505921576"
+  },
+  "vin": "4S4WMAMD8K3400077",
+  "modelYear": "2019",
+  "modelCode": "KCB",
+  "engineSize": 2.4,
+  "nickname": "TQ9 K3400077 test",
+  "vehicleKey": 14036,
+  "active": true,
+  "licensePlate": "62211Q46746",
+  "licensePlateState": "NJ",
+  "email": "tq9-0077@subaru.com",
+  "firstName": "Karina",
+  "lastName": "Brodsky",
+  "accessLevel": -1,
+  "subscriptionFeatures": ["SAFETY", "Corporate", "REMOTE"],
+  "oemCustId": "CRM-02BYZY12-Z",
+  "zip": "12323",
+  "vehicleMileage": 0,
+  "phone": "9505921576",
+  "vehicleName": "TQ9 K3400077 test",
+  "stolenVehicle": false,
+  "timeZone": "America/Chicago",
+  "features": [
+    "ABS_MIL",
+    "ACCS",
+    "ATF_MIL",
+    "AWD_MIL",
+    "BSD",
+    "BSDRCT_MIL",
+    "CEL_MIL",
+    "EBD_MIL",
+    "EOL_MIL",
+    "EPAS_MIL",
+    "EPB_MIL",
+    "ESS_MIL",
+    "EYESIGHT",
+    "NAV_HERE",
+    "OPL_MIL",
+    "RAB_MIL",
+    "RCC",
+    "REARBRK",
+    "RES",
+    "RESCC",
+    "RHSF",
+    "RHVAC",
+    "RPOIA",
+    "SRS_MIL",
+    "TEL_MIL",
+    "TPMS_MIL",
+    "VDC_MIL",
+    "WASH_MIL",
+    "g2"
+  ],
+  "userOemCustId": "CRM-02BYZY12-Z",
+  "subscriptionStatus": "ACTIVE",
+  "authorizedVehicle": false,
+  "preferredDealer": {
+    "dealerKey": 151,
+    "sourceDealerKey": 65659,
+    "dealerCode": "030291",
+    "name": "Subaru of Cherry Hill",
+    "regionCode": "050",
+    "salesDistrictCode": "01",
+    "zoneCode": "01",
+    "phoneNumber": "8448893197",
+    "servicePhoneNumber": "8555771735",
+    "faxNumber": "8563301503",
+    "address": "1800-1806 Marlton Pike West - Route 70",
+    "address2": null,
+    "city": "Cherry Hill",
+    "state": "NJ",
+    "zip": "08002",
+    "serviceAddress": "1800-1806 Marlton Pike West - Route 70",
+    "serviceCity": "Cherry Hill",
+    "serviceState": "NJ",
+    "serviceZip": "08002",
+    "url": "subaruofcherryhill.com",
+    "latDeg": 39.91849,
+    "longDeg": -75.03166,
+    "terminationDate": null,
+    "sourceUpdateDate": null,
+    "buySellDealerCode": null,
+    "createDate": 1508800029000,
+    "updateDate": 1661796253000,
+    "schedulable": true,
+    "distance": null,
+    "marketId": 1,
+    "serviceLatDeg": 39.91849,
+    "serviceLongDeg": -75.03166,
+    "partsPhoneNumber": "8447182008",
+    "serviceCountry": "US",
+    "phoneNumberOriginal": "8563301500",
+    "partsPhoneNumberOriginal": "8563301500",
+    "servicePhoneNumberOriginal": "8563301500",
+    "flags": [
+      {
+        "dealerFlagCode": "ACTIVE",
+        "dealerFlagSubCode": null
+      },
+      {
+        "dealerFlagCode": "FINANCE",
+        "dealerFlagSubCode": "CHASE"
+      },
+      {
+        "dealerFlagCode": "SCHEDULE",
+        "dealerFlagSubCode": "AUTOLOOP"
+      },
+      {
+        "dealerFlagCode": "SERVICE",
+        "dealerFlagSubCode": null
+      },
+      {
+        "dealerFlagCode": "SALES",
+        "dealerFlagSubCode": null
+      },
+      {
+        "dealerFlagCode": "CPO",
+        "dealerFlagSubCode": null
+      },
+      {
+        "dealerFlagCode": "EXPRESS",
+        "dealerFlagSubCode": null
+      },
+      {
+        "dealerFlagCode": "MAINTENANCE",
+        "dealerFlagSubCode": "CARECONNECT"
+      },
+      {
+        "dealerFlagCode": "EV",
+        "dealerFlagSubCode": "REPAIRS"
+      },
+      {
+        "dealerFlagCode": "EV",
+        "dealerFlagSubCode": "REPAIRS_BATTERY"
+      },
+      {
+        "dealerFlagCode": "HYBRID",
+        "dealerFlagSubCode": "REPAIRS"
+      },
+      {
+        "dealerFlagCode": "EQUITY",
+        "dealerFlagSubCode": "TRADEUP"
+      },
+      {
+        "dealerFlagCode": "CERTIFICATION",
+        "dealerFlagSubCode": "LPGOLD"
+      }
+    ]
+  },
+  "cachedStateCode": "MA",
+  "modelName": "Ascent",
+  "subscriptionPlans": [],
+  "crmRightToRepair": false,
+  "needMileagePrompt": false,
+  "phev": null,
+  "sunsetUpgraded": true,
+  "extDescrip": "Ice Silver Metallic",
+  "intDescrip": "Black",
+  "transCode": "CVT",
+  "provisioned": false,
+  "remoteServicePinExist": true,
+  "needEmergencyContactPrompt": false,
+  "vehicleGeoPosition": null,
+  "show3gSunsetBanner": false
+}

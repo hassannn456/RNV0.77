@@ -1,0 +1,6 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": null,
+  "data": "[{\"exceedMinimumSeconds\":\"60\",\"maxSpeedMph\":\"30\",\"name\":\"Go Slow\",\"active\":true},{\"exceedMinimumSeconds\":\"30\",\"maxSpeedMph\":\"25\",\"name\":\"Another Test\",\"active\":false},{\"exceedMinimumSeconds\":\"30\",\"maxSpeedMph\":\"25\",\"name\":\"More Creative Naming\",\"active\":false}]"
+}

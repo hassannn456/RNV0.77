@@ -1,0 +1,70 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "phevTimerSettings",
+  "data": {
+    "serviceRequestId": null,
+    "success": true,
+    "cancelled": false,
+    "remoteServiceType": "phevRetrieveTimerSettings",
+    "remoteServiceState": "finished",
+    "subState": null,
+    "errorCode": null,
+    "result": {
+      "success": true,
+      "errorCode": null,
+      "notes": {
+        "failureReason": null,
+        "failureDescription": null,
+        "errorDescription": null,
+        "errorCode": null,
+        "errorLabel": null
+      },
+      "data": {
+        "chargeTimerSettings": [
+          {
+            "timerId": 1,
+            "timerType": "DEPARTURE",
+            "timerEnabled": true,
+            "precondition": false,
+            "chargeTime": {
+              "hour": 4,
+              "minute": 30
+            },
+            "repeatSchedule": {
+              "monday": true,
+              "tuesday": true,
+              "wednesday": true,
+              "thursday": true,
+              "friday": true,
+              "saturday": true,
+              "sunday": true
+            }
+          },
+          {
+            "timerId": 2,
+            "timerType": "START",
+            "timerEnabled": true,
+            "precondition": false,
+            "chargeTime": {
+              "hour": 18,
+              "minute": 0
+            },
+            "repeatSchedule": {
+              "monday": false,
+              "tuesday": false,
+              "wednesday": true,
+              "thursday": false,
+              "friday": false,
+              "saturday": false,
+              "sunday": false
+            }
+          }
+        ]
+      }
+    },
+    "updateTime": null,
+    "vin": "JF2HPYGT2U5000413",
+    "errorDescription": null
+  }
+}

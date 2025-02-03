@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "availableAppointmentsMessage",
+  "data": {
+    "success": true,
+    "code": 0,
+    "message": "Success",
+    "availableAppointments": []
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "remoteServiceStatus",
+  "data": {
+    "serviceRequestId": "MYSUBARU0FAKEDATA_1684765327872_43_@NGTP",
+    "success": false,
+    "cancelled": false,
+    "remoteServiceType": "speedFence",
+    "remoteServiceState": "started",
+    "subState": null,
+    "errorCode": null,
+    "result": null,
+    "updateTime": null,
+    "vin": "MYSUBARU0FAKEDATA",
+    "errorDescription": null
+  }
+}

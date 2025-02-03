@@ -1,0 +1,85 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "invoicesInfo",
+  "data": {
+    "invoice_no": 205940114,
+    "client_acct_id": "CRM-919-XGV51W",
+    "bill_date": "2022-10-03 13:22:20",
+    "paid_date": "2022-10-03 13:22:21",
+    "from_date": "2022-10-03 00:00:00",
+    "to_date": "2023-10-02 00:00:00",
+    "amount": 213.09,
+    "total_due": 0.0,
+    "aria_statement_no": 1135691564,
+    "billing_group_no": 12464174,
+    "invoice_line_m": [
+      {
+        "line_item_no": 1,
+        "amount": 99.95,
+        "plan_name": "STARLINK Safety Plus  Retail",
+        "service_name": "STARLINK Safety Plus",
+        "start_date": "2022-10-03 00:00:00",
+        "end_date": "2023-10-02 00:00:00",
+        "plan_no": 10398711,
+        "service_no": 10392264,
+        "comments": "STARLINK Safety Plus"
+      },
+      {
+        "line_item_no": 2,
+        "amount": 49.95,
+        "plan_name": "STARLINK Security Plus  Retail",
+        "service_name": "STARLINK Security Plus",
+        "start_date": "2022-10-03 00:00:00",
+        "end_date": "2023-10-02 00:00:00",
+        "plan_no": 10398713,
+        "service_no": 10392265,
+        "comments": "STARLINK Security Plus"
+      },
+      {
+        "line_item_no": 3,
+        "amount": 49.95,
+        "plan_name": "STARLINK Concierge Retail",
+        "service_name": "STARLINK Concierge",
+        "start_date": "2022-10-03 00:00:00",
+        "end_date": "2023-10-02 00:00:00",
+        "plan_no": 10398716,
+        "service_no": 10392266,
+        "comments": "STARLINK Concierge"
+      },
+      {
+        "line_item_no": 4,
+        "amount": 6.62,
+        "plan_name": null,
+        "service_name": "State Taxes",
+        "start_date": "2022-10-03 00:00:00",
+        "end_date": "2023-10-02 00:00:00",
+        "plan_no": null,
+        "service_no": 401,
+        "comments": "State Taxes"
+      },
+      {
+        "line_item_no": 5,
+        "amount": 3.31,
+        "plan_name": null,
+        "service_name": "State Taxes",
+        "start_date": "2022-10-03 00:00:00",
+        "end_date": "2023-10-02 00:00:00",
+        "plan_no": null,
+        "service_no": 401,
+        "comments": "State Taxes"
+      },
+      {
+        "line_item_no": 6,
+        "amount": 3.31,
+        "plan_name": null,
+        "service_name": "State Taxes",
+        "start_date": "2022-10-03 00:00:00",
+        "end_date": "2023-10-02 00:00:00",
+        "plan_no": null,
+        "service_no": 401,
+        "comments": "State Taxes"
+      }
+    ]
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": null,
+  "data": {
+    "tradeInValue": "16500",
+    "vehicle": {
+      "customer": {
+        "sessionCustomer": {
+          "firstName": "Jenna",
+          "lastName": "Morton",
+          "title": "",
+          "suffix": "",
+          "email": "billingphev@gmail.com",
+          "address": "6500 vicky dr",
+          "address2": "",
+          "city": "newark",
+          "state": "DE",
+          "zip": "19702",
+          "cellularPhone": "8888093211",
+          "workPhone": "",
+          "homePhone": "8888093211",
+          "countryCode": "USA",
+          "relationshipType": null,
+          "gender": "",
+          "dealerCode": null,
+          "oemCustId": "CRM-48BBAP27-V",
+          "createMysAccount": null,
+          "sourceSystemCode": "mys",
+          "vehicles": [
+            {
+              "vin": "JF2GPABC5G8209108",
+              "siebelVehicleRelationship": "TM Subscriber",
+              "primary": true,
+              "oemCustId": "CRM-48BBAP27-V",
+              "status": "Active"
+            }
+          ],
+          "phone": "8888093211",
+          "zip5Digits": "19702",
+          "primaryPersonalCountry": "USA"
+        },
+        "email": "8888093211",
+        "firstName": "Jenna",
+        "lastName": "Morton",
+        "oemCustId": "CRM-48BBAP27-V",
+        "zip": "19702",
+        "phone": "8888093211"
+      },
+      "features": [
+        "11.6MMAN",
+        "ABS_MIL",
+        "ACCS",
+        "AHBL_MIL",
+        "ATF_MIL",
+        "AWD_MIL",
+        "BSD",
+        "BSDRCT_MIL",
+        "CEL_MIL",
+        "EBD_MIL",
+        "EOL_MIL",
+        "EPAS_MIL",
+        "EPB_MIL",
+        "ESS_MIL",
+        "EVDTE",
+        "EYESIGHT",
+        "HEVCM_MIL",
+        "HEV_MIL",
+        "ISS_MIL",
+        "OPL_MIL",
+        "PAB_MIL",
+        "PANPM-TUIRWAOC",
+        "PHEV",
+        "RAB_MIL",
+        "RCC",
+        "REARBRK",
+        "RHSB",
+        "RHSF",
+        "RHVAC",
+        "RPOI",
+        "RPOIA",
+        "SRH_MIL",
+        "SRS_MIL",
+        "TEL_MIL",
+        "TPMS_MIL",
+        "VDC_MIL",
+        "WASH_MIL",
+        "g2"
+      ],
+      "vin": "JF2GPABC5G8209108",
+      "modelYear": "2016",
+      "modelCode": "GRC",
+      "engineSize": 2.0,
+      "nickname": "2016 Crosstrek 2.0i Premium",
+      "vehicleKey": 311753,
+      "active": true,
+      "licensePlate": "",
+      "licensePlateState": "",
+      "email": "billingphev@gmail.com",
+      "firstName": "Jenna",
+      "lastName": "Morton",
+      "subscriptionFeatures": ["REMOTE", "SAFETY", "Retail"],
+      "accessLevel": -1,
+      "oemCustId": "CRM-48BBAP27-V",
+      "zip": "19702",
+      "vehicleMileage": 388,
+      "phone": "8888093211",
+      "vehicleName": "2016 Crosstrek 2.0i Premium",
+      "stolenVehicle": false,
+      "timeZone": "America/New_York",
+      "intDescrip": "Black",
+      "modelName": "Crosstrek",
+      "transCode": "CVT",
+      "provisioned": true,
+      "remoteServicePinExist": true,
+      "needEmergencyContactPrompt": false,
+      "vehicleGeoPosition": {
+        "latitude": 48.28363,
+        "longitude": 11.562153,
+        "speed": null,
+        "heading": null,
+        "timestamp": "2023-10-11T09:52:22"
+      },
+      "show3gSunsetBanner": false,
+      "extDescrip": "Ice Silver Metallic",
+      "userOemCustId": "CRM-48BBAP27-V",
+      "subscriptionStatus": "ACTIVE",
+      "authorizedVehicle": false,
+      "preferredDealer": null,
+      "cachedStateCode": "DE",
+      "subscriptionPlans": [
+        {
+          "expireDate": null,
+          "expireDateLocal": {
+            "year": 2024,
+            "month": "SEPTEMBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": true,
+            "monthValue": 9,
+            "dayOfMonth": 25,
+            "dayOfWeek": "WEDNESDAY",
+            "dayOfYear": 269
+          },
+          "description": "STARLINK Security Plus",
+          "automaticRenewal": true,
+          "startDate": {
+            "year": 2023,
+            "month": "SEPTEMBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": false,
+            "monthValue": 9,
+            "dayOfMonth": 25,
+            "dayOfWeek": "MONDAY",
+            "dayOfYear": 268
+          }
+        },
+        {
+          "expireDate": null,
+          "expireDateLocal": {
+            "year": 2024,
+            "month": "SEPTEMBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": true,
+            "monthValue": 9,
+            "dayOfMonth": 25,
+            "dayOfWeek": "WEDNESDAY",
+            "dayOfYear": 269
+          },
+          "description": "STARLINK Safety Plus",
+          "automaticRenewal": true,
+          "startDate": {
+            "year": 2023,
+            "month": "SEPTEMBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": false,
+            "monthValue": 9,
+            "dayOfMonth": 25,
+            "dayOfWeek": "MONDAY",
+            "dayOfYear": 268
+          }
+        }
+      ],
+      "crmRightToRepair": false,
+      "needMileagePrompt": false,
+      "phev": null,
+      "sunsetUpgraded": true
+    }
+  }
+}

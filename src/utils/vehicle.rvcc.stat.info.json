@@ -1,0 +1,348 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": null,
+  "data": {
+    "tradeInValue": null,
+    "vehicle": {
+      "customer": {
+        "sessionCustomer": {
+          "firstName": "Gen3",
+          "lastName": "233",
+          "title": "",
+          "suffix": "",
+          "email": "gen3test233@gmail.com",
+          "address": "305 New Jersey Ave",
+          "address2": "",
+          "city": "Absecon",
+          "state": "NJ",
+          "zip": "08201",
+          "cellularPhone": "4343434343",
+          "workPhone": "5866856986",
+          "homePhone": "5869328686",
+          "countryCode": "USA",
+          "relationshipType": null,
+          "gender": "",
+          "dealerCode": null,
+          "oemCustId": "CRM-92IQZ-4UKX",
+          "createMysAccount": null,
+          "sourceSystemCode": "mys",
+          "vehicles": [
+            {
+              "vin": "4S4BRDKC5D2252233",
+              "siebelVehicleRelationship": "TM Subscriber",
+              "primary": true,
+              "oemCustId": "CRM-92IQZ-4UKX",
+              "status": "Active"
+            }
+          ],
+          "phone": "4343434343",
+          "zip5Digits": "08201",
+          "primaryPersonalCountry": "USA"
+        },
+        "email": "4343434343",
+        "firstName": "Gen3",
+        "lastName": "233",
+        "oemCustId": "CRM-92IQZ-4UKX",
+        "zip": "08201",
+        "phone": "4343434343"
+      },
+      "features": [
+        "11.6MMAN",
+        "ABS_MIL",
+        "ACCS",
+        "AHBL_MIL",
+        "ATF_MIL",
+        "AWD_MIL",
+        "BSD",
+        "BSDRCT_MIL",
+        "CEL_MIL",
+        "DOORALL",
+        "DOOR_LU_STAT",
+        "DOOR_OC_STAT",
+        "EBD_MIL",
+        "EOL_MIL",
+        "EPAS_MIL",
+        "EPB_MIL",
+        "ESS_MIL",
+        "EYESIGHT",
+        "HOODSTAT",
+        "ISS_MIL",
+        "MOONSTAT",
+        "NAV_TOMTOM",
+        "OPL_MIL",
+        "PANMRF_ES",
+        "PANPM-DG2G",
+        "PANPM-FGTU",
+        "PANPM-INTRETR",
+        "PANPM-PWRSHD",
+        "PANPM-TUIRWAOC",
+        "PANPW-RGF",
+        "PWAAADWWAP",
+        "RAB_MIL",
+        "RCC",
+        "RDP",
+        "REARBRK",
+        "RES",
+        "RHSF",
+        "RPOI",
+        "RPOIA",
+        "RRSR",
+        "RTGU",
+        "RVCCRFSH",
+        "RVFS",
+        "SRH_MIL",
+        "SRS_MIL",
+        "SXM360L",
+        "TAIL_LU_STAT",
+        "TAIL_OC_STAT",
+        "TEL_MIL",
+        "TIF_33",
+        "TIR_33",
+        "TLD",
+        "TPMS_MIL",
+        "TRAFFIC",
+        "VALET",
+        "VALET_SETTINGS",
+        "VDC_MIL",
+        "WASH_MIL",
+        "WDWSTAT",
+        "g3"
+      ],
+      "vin": "4S4BRDKC5D2252233",
+      "modelYear": "2022",
+      "modelCode": "NCH",
+      "engineSize": 2.4,
+      "nickname": "gen3test233",
+      "vehicleKey": 392730,
+      "active": true,
+      "licensePlate": "",
+      "licensePlateState": "",
+      "email": "gen3test233@gmail.com",
+      "firstName": "Gen3",
+      "lastName": "233",
+      "subscriptionFeatures": ["SAFETY", "Retail3", "CONCIERGE", "REMOTE"],
+      "accessLevel": -1,
+      "oemCustId": "CRM-92IQZ-4UKX",
+      "zip": "08201",
+      "vehicleMileage": 331,
+      "phone": "4343434343",
+      "vehicleName": "gen3test233",
+      "stolenVehicle": false,
+      "timeZone": "America/New_York",
+      "intDescrip": "Gray",
+      "modelName": "Ascent",
+      "transCode": "CVT",
+      "provisioned": false,
+      "remoteServicePinExist": true,
+      "needEmergencyContactPrompt": false,
+      "vehicleGeoPosition": {
+        "latitude": 17.403576,
+        "longitude": 78.33044,
+        "speed": null,
+        "heading": null,
+        "timestamp": "2023-10-17T11:03:40"
+      },
+      "show3gSunsetBanner": false,
+      "extDescrip": "Autumn Green Metallic",
+      "userOemCustId": "CRM-92IQZ-4UKX",
+      "subscriptionStatus": "ACTIVE",
+      "authorizedVehicle": false,
+      "preferredDealer": {
+        "dealerKey": 534,
+        "sourceDealerKey": 401839,
+        "dealerCode": "020233",
+        "name": "Island Subaru",
+        "regionCode": "020",
+        "salesDistrictCode": "01",
+        "zoneCode": "01",
+        "phoneNumber": "8447287818",
+        "servicePhoneNumber": "8669363352",
+        "faxNumber": "7184485061",
+        "address": "1257 Hylan Blvd",
+        "address2": null,
+        "city": "Staten Island",
+        "state": "NY",
+        "zip": "10305",
+        "serviceAddress": "111 Quintard St",
+        "serviceCity": "Staten Island",
+        "serviceState": "NY",
+        "serviceZip": "10305",
+        "url": "myislandsubaru.com",
+        "latDeg": 40.59773,
+        "longDeg": -74.084816,
+        "terminationDate": null,
+        "sourceUpdateDate": null,
+        "buySellDealerCode": "020289",
+        "createDate": 1508800029000,
+        "updateDate": 1661796237000,
+        "schedulable": true,
+        "distance": null,
+        "marketId": 1,
+        "serviceLatDeg": 40.594736,
+        "serviceLongDeg": -74.08279,
+        "partsPhoneNumber": "8554196188",
+        "serviceCountry": "US",
+        "phoneNumberOriginal": "7186976000",
+        "partsPhoneNumberOriginal": "7186976000",
+        "servicePhoneNumberOriginal": "7189877100",
+        "flags": [
+          {
+            "dealerFlagCode": "ACTIVE",
+            "dealerFlagSubCode": null
+          },
+          {
+            "dealerFlagCode": "FINANCE",
+            "dealerFlagSubCode": "CHASE"
+          },
+          {
+            "dealerFlagCode": "SCHEDULE",
+            "dealerFlagSubCode": "XTIME"
+          },
+          {
+            "dealerFlagCode": "SERVICE",
+            "dealerFlagSubCode": null
+          },
+          {
+            "dealerFlagCode": "SALES",
+            "dealerFlagSubCode": null
+          },
+          {
+            "dealerFlagCode": "CPO",
+            "dealerFlagSubCode": null
+          },
+          {
+            "dealerFlagCode": "MAINTENANCE",
+            "dealerFlagSubCode": "CARECONNECT"
+          },
+          {
+            "dealerFlagCode": "EV",
+            "dealerFlagSubCode": "REPAIRS"
+          },
+          {
+            "dealerFlagCode": "EV",
+            "dealerFlagSubCode": "REPAIRS_BATTERY"
+          },
+          {
+            "dealerFlagCode": "HYBRID",
+            "dealerFlagSubCode": "REPAIRS"
+          },
+          {
+            "dealerFlagCode": "EQUITY",
+            "dealerFlagSubCode": "TRADEUP"
+          },
+          {
+            "dealerFlagCode": "CERTIFICATION",
+            "dealerFlagSubCode": "LPCOMM"
+          }
+        ]
+      },
+      "cachedStateCode": "NJ",
+      "subscriptionPlans": [
+        {
+          "expireDate": null,
+          "expireDateLocal": {
+            "year": 2024,
+            "month": "NOVEMBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": true,
+            "monthValue": 11,
+            "dayOfMonth": 2,
+            "dayOfWeek": "SATURDAY",
+            "dayOfYear": 307
+          },
+          "description": "STARLINK Safety Plus",
+          "automaticRenewal": true,
+          "startDate": {
+            "year": 2023,
+            "month": "NOVEMBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": false,
+            "monthValue": 11,
+            "dayOfMonth": 2,
+            "dayOfWeek": "THURSDAY",
+            "dayOfYear": 306
+          }
+        },
+        {
+          "expireDate": null,
+          "expireDateLocal": {
+            "year": 2024,
+            "month": "NOVEMBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": true,
+            "monthValue": 11,
+            "dayOfMonth": 2,
+            "dayOfWeek": "SATURDAY",
+            "dayOfYear": 307
+          },
+          "description": "STARLINK Concierge",
+          "automaticRenewal": true,
+          "startDate": {
+            "year": 2023,
+            "month": "NOVEMBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": false,
+            "monthValue": 11,
+            "dayOfMonth": 2,
+            "dayOfWeek": "THURSDAY",
+            "dayOfYear": 306
+          }
+        },
+        {
+          "expireDate": null,
+          "expireDateLocal": {
+            "year": 2024,
+            "month": "NOVEMBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": true,
+            "monthValue": 11,
+            "dayOfMonth": 2,
+            "dayOfWeek": "SATURDAY",
+            "dayOfYear": 307
+          },
+          "description": "STARLINK Security Plus",
+          "automaticRenewal": true,
+          "startDate": {
+            "year": 2023,
+            "month": "NOVEMBER",
+            "chronology": {
+              "calendarType": "iso8601",
+              "id": "ISO"
+            },
+            "era": "CE",
+            "leapYear": false,
+            "monthValue": 11,
+            "dayOfMonth": 2,
+            "dayOfWeek": "THURSDAY",
+            "dayOfYear": 306
+          }
+        }
+      ],
+      "crmRightToRepair": false,
+      "needMileagePrompt": false,
+      "phev": null,
+      "sunsetUpgraded": true
+    }
+  }
+}

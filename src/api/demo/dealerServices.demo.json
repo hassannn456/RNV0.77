@@ -1,0 +1,48 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "availableServicesMessage",
+  "data": {
+    "success": true,
+    "code": 0,
+    "message": "Success",
+    "services": [
+      {
+        "serviceName": "Oil Change",
+        "opCode": "LOF",
+        "price": 0,
+        "isRecommendedService": false,
+        "recommendedServiceMileage": 0,
+        "isGeneralRepair": false,
+        "serviceCategory": 0,
+        "comment": null,
+        "isDue": null,
+        "isDeclinedService": false
+      },
+      {
+        "serviceName": "Check Engine Light",
+        "opCode": "DIAG",
+        "price": 49,
+        "isRecommendedService": false,
+        "recommendedServiceMileage": 0,
+        "isGeneralRepair": false,
+        "serviceCategory": 0,
+        "comment": null,
+        "isDue": null,
+        "isDeclinedService": false
+      },
+      {
+        "serviceName": "48,000 Mile or 48 Month Maintenance",
+        "opCode": "48K",
+        "price": 0,
+        "isRecommendedService": true,
+        "recommendedServiceMileage": 48000,
+        "isGeneralRepair": false,
+        "serviceCategory": 0,
+        "comment": null,
+        "isDue": false,
+        "isDeclinedService": false
+      }
+    ]
+  }
+}

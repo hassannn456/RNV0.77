@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "errorCode": null,
+  "dataName": "remoteServiceStatus",
+  "data": {
+    "serviceRequestId": "MYSUBARU0FAKEDATA_1680715460381_47_@NGTP",
+    "success": true,
+    "cancelled": false,
+    "remoteServiceType": "lightsOnly",
+    "remoteServiceState": "started",
+    "subState": null,
+    "errorCode": null,
+    "result": null,
+    "updateTime": 1680715460000,
+    "vin": "MYSUBARU0FAKEDATA",
+    "errorDescription": null
+  }
+}
